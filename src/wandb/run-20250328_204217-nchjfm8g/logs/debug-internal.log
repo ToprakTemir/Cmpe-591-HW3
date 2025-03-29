@@ -1,0 +1,16 @@
+{"time":"2025-03-28T20:42:17.942703248+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_204217-nchjfm8g/logs/debug-core.log"}
+{"time":"2025-03-28T20:42:18.045235102+03:00","level":"INFO","msg":"created new stream","id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:18.045251954+03:00","level":"INFO","msg":"stream: started","id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:18.045301809+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:18.045337992+03:00","level":"INFO","msg":"sender: started","stream_id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:18.045359617+03:00","level":"INFO","msg":"handler: started","stream_id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:18.36242665+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-28T20:42:18.439064185+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-28T20:42:18.439531189+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-28T20:42:19.405803799+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.276924122,"progress":"1.0KB/1.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.037567531,"progress":"502B/502B"}],"total_operations":2}}
+{"time":"2025-03-28T20:42:19.656539177+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-28T20:42:19.905120428+03:00","level":"INFO","msg":"stream: closing","id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:19.905130302+03:00","level":"INFO","msg":"handler: closed","stream_id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:19.905136409+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:19.905139606+03:00","level":"INFO","msg":"sender: closed","stream_id":"nchjfm8g"}
+{"time":"2025-03-28T20:42:19.905180064+03:00","level":"INFO","msg":"stream: closed","id":"nchjfm8g"}

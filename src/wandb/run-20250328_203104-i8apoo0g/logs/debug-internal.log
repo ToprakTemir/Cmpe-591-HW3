@@ -1,0 +1,17 @@
+{"time":"2025-03-28T20:31:04.146616593+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_203104-i8apoo0g/logs/debug-core.log"}
+{"time":"2025-03-28T20:31:04.248507462+03:00","level":"INFO","msg":"created new stream","id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:04.248531706+03:00","level":"INFO","msg":"stream: started","id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:04.248592644+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:04.248667477+03:00","level":"INFO","msg":"handler: started","stream_id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:04.248700073+03:00","level":"INFO","msg":"sender: started","stream_id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:04.465041864+03:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-28T20:31:04.465147765+03:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-03-28T20:31:05.467043282+03:00","level":"INFO","msg":"stream: closing","id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:05.467103385+03:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-03-28T20:31:05.69084471+03:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-28T20:31:05.690912832+03:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project topraktemir/591HW3 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-03-28T20:31:05.691905998+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-28T20:31:05.691956814+03:00","level":"INFO","msg":"handler: closed","stream_id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:05.691968459+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:05.691988642+03:00","level":"INFO","msg":"sender: closed","stream_id":"i8apoo0g"}
+{"time":"2025-03-28T20:31:05.691999233+03:00","level":"INFO","msg":"stream: closed","id":"i8apoo0g"}

@@ -1,0 +1,47 @@
+Episode 0 collected in 89.5231614112854 seconds, reward=-29.97061206168589, flush=True
+total loss: -34.358821868896484
+model updated in 0.21973586082458496 seconds
+
+Episode 1 collected in 0.8047749996185303 seconds, reward=9.86694095246502, flush=True
+total loss: 0.04412951320409775
+model updated in 0.004548072814941406 seconds
+
+Episode 2 collected in 94.80030608177185 seconds, reward=-38.297444296865585, flush=True
+total loss: -45.31857681274414
+model updated in 0.7063660621643066 seconds
+
+Episode 3 collected in 91.79223012924194 seconds, reward=-32.51855328787647, flush=True
+total loss: -37.618873596191406
+model updated in 0.2717092037200928 seconds
+
+Episode 4 collected in 89.87043929100037 seconds, reward=-35.38941008806431, flush=True
+total loss: -38.16083526611328
+model updated in 0.26186633110046387 seconds
+
+Episode 5 collected in 99.73011350631714 seconds, reward=-39.477178927071165, flush=True
+total loss: -44.292083740234375
+model updated in 0.2579190731048584 seconds
+Traceback (most recent call last):
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 255, in sweep_reinforce
+        # num_episodes_per_update = config.num_episodes_per_update, constant 1
+    ...<8 lines>...
+
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 216, in reinforce_main
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 131, in step
+    result = self._set_ee_in_cartesian(target_pos, rotation=[-90, 0, 180], n_splits=30, threshold=0.04)
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/environment.py", line 162, in _set_ee_in_cartesian
+    result = self._follow_ee_trajectory(position_traj, orientation_traj,
+                               max_iters=max_iters, threshold=threshold)
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/environment.py", line 168, in _follow_ee_trajectory
+    result = self._set_ee_pose(position, orientation=orientation,
+                      max_iters=max_iters, threshold=threshold)
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/environment.py", line 118, in _set_ee_pose
+    qpos = qpos_from_site_pose(self.model, self.data, self._ee_site,
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               position, quat, joint_names=self._joint_names[:-1]).qpos
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/environment.py", line 306, in qpos_from_site_pose
+    data = deepcopy(data)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/copy.py", line 144, in deepcopy
+    y = copier(memo)
+KeyboardInterrupt

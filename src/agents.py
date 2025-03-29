@@ -4,7 +4,7 @@ from torch import optim
 from model import VPG
 
 class REINFORCE_Agent():
-    def __init__(self, model=None, device="cpu", num_episodes_per_update=6):
+    def __init__(self, model=None, device="cpu", num_episodes_per_update=1, lr=1e-4):
         if model is None:
             self.model = VPG().to(device)
         else:
@@ -14,9 +14,8 @@ class REINFORCE_Agent():
 
         # HYPERPARAMETERS
         self.episodes_per_update = num_episodes_per_update
-        self.lr = 3e-4
+        self.lr = lr
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
-
 
         # self.episode_keys = ["state", "action", "reward", "next_state", "done", "log_prob"]
         self.episode_keys = ["total_log_prob", "cumulative_reward", "steps_per_episode"]

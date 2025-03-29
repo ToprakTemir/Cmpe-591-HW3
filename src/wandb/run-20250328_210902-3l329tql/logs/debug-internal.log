@@ -1,0 +1,110 @@
+2025-03-28 21:09:02,052 INFO    StreamThr :3198392 [internal.py:wandb_internal():83] W&B internal server running at pid: 3198392, started at: 2025-03-28 21:09:02.051833
+2025-03-28 21:09:02,064 INFO    WriterThread:3198392 [datastore.py:open_for_write():87] open: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/run-3l329tql.wandb
+2025-03-28 21:09:02,500 INFO    SenderThread:3198392 [dir_watcher.py:__init__():211] watching files in: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files
+2025-03-28 21:09:02,500 INFO    SenderThread:3198392 [sender.py:_start_run_threads():1134] run started: 3l329tql with start time 1743185342.047876
+2025-03-28 21:09:02,527 INFO    HandlerThread:3198392 [system_monitor.py:start():187] Starting system monitor
+2025-03-28 21:09:02,529 INFO    SystemMonitor:3198392 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-03-28 21:09:02,530 INFO    HandlerThread:3198392 [system_monitor.py:probe():207] Collecting system info
+2025-03-28 21:09:02,536 INFO    SystemMonitor:3198392 [interfaces.py:start():186] Started cpu monitoring
+2025-03-28 21:09:02,539 INFO    SystemMonitor:3198392 [interfaces.py:start():186] Started disk monitoring
+2025-03-28 21:09:02,540 INFO    SystemMonitor:3198392 [interfaces.py:start():186] Started gpu monitoring
+2025-03-28 21:09:02,541 INFO    SystemMonitor:3198392 [interfaces.py:start():186] Started memory monitoring
+2025-03-28 21:09:02,542 INFO    SystemMonitor:3198392 [interfaces.py:start():186] Started network monitoring
+2025-03-28 21:09:02,560 INFO    HandlerThread:3198392 [system_monitor.py:probe():217] Finished collecting system info
+2025-03-28 21:09:02,560 INFO    HandlerThread:3198392 [system_monitor.py:probe():220] Publishing system info
+2025-03-28 21:09:03,502 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/conda-environment.yaml
+2025-03-28 21:09:04,152 INFO    HandlerThread:3198392 [system_monitor.py:probe():222] Finished publishing system info
+2025-03-28 21:09:04,155 INFO    SenderThread:3198392 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2025-03-28 21:09:04,503 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/conda-environment.yaml
+2025-03-28 21:09:04,503 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/requirements.txt
+2025-03-28 21:09:04,503 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-metadata.json
+2025-03-28 21:09:04,873 INFO    wandb-upload_0:3198392 [upload_job.py:push():130] Uploaded file /tmp/tmp7tqxnm16wandb/d1m91poq-wandb-metadata.json
+2025-03-28 21:09:35,556 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/config.yaml
+2025-03-28 21:14:18,958 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:14:20,960 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:16:18,109 INFO    SenderThread:3198392 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:16:18,175 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-summary.json
+2025-03-28 21:16:21,181 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:21:52,608 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:23:34,816 INFO    SenderThread:3198392 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:23:35,736 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-summary.json
+2025-03-28 21:23:36,734 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:26:32,950 WARNING FileStreamThread:3198392 [file_stream.py:request_with_retry():674] requests_with_retry encountered retryable exception: 502 Server Error: Bad Gateway for url: https://api.wandb.ai/files/topraktemir-/Cmpe-591-HW3-src/3l329tql/file_stream. func: <bound method Session.post of <requests.sessions.Session object at 0x770b35db4cd0>>, args: ('https://api.wandb.ai/files/topraktemir-/Cmpe-591-HW3-src/3l329tql/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 315, 'content': ['{"system.cpu": 3.1, "system.proc.cpu.threads": 61, "_wandb": true, "_timestamp": 1743186302.779694, "_runtime": 960.731818}', '{"system.proc.memory.availableMB": 511.11, "system.memory": 98.4, "system.proc.memory.rssMB": 1033.81, "system.proc.memory.percent": 3.24, "_wandb": true, "_timestamp": 1743186302.797563, "_runtime": 960.749687}', '{"system.disk.\\\\.usagePercent": 34.6, "system.disk.\\\\.usageGB": 265.57, "system.disk.in": 1665.28, "system.disk.out": 9593.13, "_wandb": true, "_timestamp": 1743186302.898031, "_runtime": 960.850155}', '{"system.gpu.0.memoryAllocated": 11.61, "system.gpu.process.0.memoryAllocated": 11.61, "system.gpu.0.memoryAllocatedBytes": 2991390720.0, "system.gpu.process.0.memoryAllocatedBytes": 2991390720.0, "system.gpu.0.memory": 0.0, "system.gpu.process.0.memory": 0.0, "system.gpu.0.gpu": 0.0, "system.gpu.process.0.gpu": 0.0, "system.gpu.0.temp": 38.0, "system.gpu.process.0.temp": 38.0, "system.gpu.0.powerWatts": 8.89, "system.gpu.process.0.powerWatts": 8.89, "system.gpu.0.powerPercent": 1.97, "system.gpu.process.0.powerPercent": 1.97, "_wandb": true, "_timestamp": 1743186307.421385, "_runtime": 965.373509}', '{"system.network.sent": 18901231.0, "system.network.recv": 9347133.0, "_wandb": true, "_timestamp": 1743186317.779997, "_runtime": 975.732121}', '{"system.cpu": 3.72, "system.proc.cpu.threads": 61, "_wandb": true, "_timestamp": 1743186317.780564, "_runtime": 975.732688}', '{"system.proc.memory.availableMB": 167.92, "system.memory": 99.5, "system.proc.memory.rssMB": 1073.03, "system.proc.memory.percent": 3.36, "_wandb": true, "_timestamp": 1743186317.79896, "_runtime": 975.751084}', '{"system.disk.\\\\.usagePercent": 34.6, "system.disk.\\\\.usageGB": 265.57, "system.disk.in": 1845.07, "system.disk.out": 9604.12, "_wandb": true, "_timestamp": 1743186317.903883, "_runtime": 975.856007}', '{"system.gpu.0.memoryAllocated": 11.61, "system.gpu.process.0.memoryAllocated": 11.61, "system.gpu.0.memoryAllocatedBytes": 2991390720.0, "system.gpu.process.0.memoryAllocatedBytes": 2991390720.0, "system.gpu.0.memory": 0.0, "system.gpu.process.0.memory": 0.0, "system.gpu.0.gpu": 0.0, "system.gpu.process.0.gpu": 0.0, "system.gpu.0.temp": 37.0, "system.gpu.process.0.temp": 37.0, "system.gpu.0.powerWatts": 8.93, "system.gpu.process.0.powerWatts": 8.93, "system.gpu.0.powerPercent": 1.99, "system.gpu.process.0.powerPercent": 1.99, "_wandb": true, "_timestamp": 1743186322.598875, "_runtime": 980.550999}', '{"system.cpu": 3.76, "system.proc.cpu.threads": 61, "_wandb": true, "_timestamp": 1743186332.782427, "_runtime": 990.734551}', '{"system.network.sent": 19043191.0, "system.network.recv": 9435890.0, "_wandb": true, "_timestamp": 1743186332.783049, "_runtime": 990.735173}']}}, 'dropped': 0}}
+2025-03-28 21:29:37,295 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:31:04,445 INFO    SenderThread:3198392 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:31:05,403 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-summary.json
+2025-03-28 21:31:05,404 INFO    Thread-12 :3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:34:49,386 INFO    SenderThread:3198392 [sender.py:send_exit():554] handling exit code: 1
+2025-03-28 21:34:49,387 INFO    SenderThread:3198392 [sender.py:send_exit():556] handling runtime: 1546
+2025-03-28 21:34:49,387 INFO    SenderThread:3198392 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:34:49,387 INFO    SenderThread:3198392 [sender.py:send_exit():562] send defer
+2025-03-28 21:34:49,387 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 0
+2025-03-28 21:34:49,387 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 0
+2025-03-28 21:34:49,387 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 1
+2025-03-28 21:34:49,388 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 1
+2025-03-28 21:34:49,388 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 1
+2025-03-28 21:34:49,388 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 2
+2025-03-28 21:34:49,388 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 2
+2025-03-28 21:34:49,388 INFO    HandlerThread:3198392 [system_monitor.py:finish():196] Stopping system monitor
+2025-03-28 21:34:49,388 INFO    HandlerThread:3198392 [interfaces.py:finish():198] Joined cpu monitor
+2025-03-28 21:34:49,389 INFO    HandlerThread:3198392 [interfaces.py:finish():198] Joined disk monitor
+2025-03-28 21:34:49,424 INFO    HandlerThread:3198392 [interfaces.py:finish():198] Joined gpu monitor
+2025-03-28 21:34:49,424 INFO    HandlerThread:3198392 [interfaces.py:finish():198] Joined memory monitor
+2025-03-28 21:34:49,424 INFO    HandlerThread:3198392 [interfaces.py:finish():198] Joined network monitor
+2025-03-28 21:34:49,424 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 2
+2025-03-28 21:34:49,424 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 3
+2025-03-28 21:34:49,424 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 3
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 3
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 4
+2025-03-28 21:34:49,425 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 4
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 4
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 5
+2025-03-28 21:34:49,425 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 5
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 5
+2025-03-28 21:34:49,425 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 6
+2025-03-28 21:34:49,426 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 6
+2025-03-28 21:34:49,426 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 6
+2025-03-28 21:34:49,426 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 7
+2025-03-28 21:34:49,426 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 7
+2025-03-28 21:34:49,426 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 7
+2025-03-28 21:34:49,950 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 8
+2025-03-28 21:34:49,951 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 8
+2025-03-28 21:34:49,951 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 8
+2025-03-28 21:34:49,951 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 9
+2025-03-28 21:34:49,951 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 9
+2025-03-28 21:34:49,951 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 9
+2025-03-28 21:34:49,951 INFO    SenderThread:3198392 [dir_watcher.py:finish():359] shutting down directory watcher
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-summary.json
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():389] scan: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-metadata.json wandb-metadata.json
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/conda-environment.yaml conda-environment.yaml
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/requirements.txt requirements.txt
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-summary.json wandb-summary.json
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log output.log
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/config.yaml config.yaml
+2025-03-28 21:34:50,071 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 10
+2025-03-28 21:34:50,072 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 10
+2025-03-28 21:34:50,073 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 10
+2025-03-28 21:34:50,074 INFO    SenderThread:3198392 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-28 21:34:50,644 INFO    wandb-upload_0:3198392 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/conda-environment.yaml
+2025-03-28 21:34:50,667 INFO    wandb-upload_2:3198392 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/wandb-summary.json
+2025-03-28 21:34:50,677 INFO    wandb-upload_1:3198392 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/requirements.txt
+2025-03-28 21:34:50,680 INFO    wandb-upload_3:3198392 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/output.log
+2025-03-28 21:34:50,686 INFO    wandb-upload_4:3198392 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210902-3l329tql/files/config.yaml
+2025-03-28 21:34:50,886 INFO    Thread-11 (_thread_body):3198392 [sender.py:transition_state():582] send defer: 11
+2025-03-28 21:34:50,886 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 11
+2025-03-28 21:34:50,887 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 11
+2025-03-28 21:34:50,887 INFO    SenderThread:3198392 [file_pusher.py:join():175] waiting for file pusher
+2025-03-28 21:34:50,887 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 12
+2025-03-28 21:34:50,887 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 12
+2025-03-28 21:34:50,887 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 12
+2025-03-28 21:34:50,887 INFO    SenderThread:3198392 [file_stream.py:finish():601] file stream finish called
+2025-03-28 21:34:51,543 INFO    SenderThread:3198392 [file_stream.py:finish():605] file stream finish is done
+2025-03-28 21:34:51,543 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 13
+2025-03-28 21:34:51,543 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 13
+2025-03-28 21:34:51,544 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 13
+2025-03-28 21:34:51,544 INFO    SenderThread:3198392 [sender.py:transition_state():582] send defer: 14
+2025-03-28 21:34:51,544 INFO    HandlerThread:3198392 [handler.py:handle_request_defer():188] handle defer: 14
+2025-03-28 21:34:51,544 INFO    SenderThread:3198392 [sender.py:send_request_defer():578] handle sender defer: 14

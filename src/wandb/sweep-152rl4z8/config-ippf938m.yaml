@@ -1,0 +1,14 @@
+wandb_version: 1
+
+c_direction:
+  value: 0.32385502310088166
+c_ee_to_obj:
+  value: 1.75564656307961
+c_obj_to_target:
+  value: 0.6223343332378362
+completion_reward:
+  value: 19.12716083206986
+model_lr:
+  value: 0.0001630649141259559
+num_episodes_per_update:
+  value: 5

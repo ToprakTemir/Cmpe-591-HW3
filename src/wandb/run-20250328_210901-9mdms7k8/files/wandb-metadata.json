@@ -1,0 +1,214 @@
+{
+    "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.39",
+    "python": "CPython 3.13.2",
+    "heartbeatAt": "2025-03-28T18:09:01.992009",
+    "startedAt": "2025-03-28T18:09:01.354774",
+    "docker": null,
+    "args": [
+        "service",
+        "--debug",
+        "--port-filename",
+        "/tmp/tmphbk9_qth/port-3197420.txt",
+        "--pid",
+        "3197420"
+    ],
+    "state": "running",
+    "program": "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py",
+    "codePathLocal": "homework3.py",
+    "codePath": "src/homework3.py",
+    "git": {
+        "remote": "git@github.com:ToprakTemir/Cmpe-591-HW3.git",
+        "commit": "8349af75304e5654fb55f738bdf4dd7ae775a0c0"
+    },
+    "email": "btoprakt@icloud.com",
+    "root": "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3",
+    "host": "kronos",
+    "username": null,
+    "executable": "/home/toprak/miniforge3/envs/cmpe591/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 5012.525124999999,
+        "min": 800.0,
+        "max": 5087.5
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 5298.496,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5463.007,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5699.943,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5599.944,
+            "min": 800.0,
+            "max": 6000.0
+        },
+        {
+            "current": 5599.944,
+            "min": 800.0,
+            "max": 6000.0
+        },
+        {
+            "current": 5700.118,
+            "min": 800.0,
+            "max": 6000.0
+        },
+        {
+            "current": 5700.056,
+            "min": 800.0,
+            "max": 6000.0
+        },
+        {
+            "current": 5699.943,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 5700.0,
+            "min": 800.0,
+            "max": 5700.0
+        },
+        {
+            "current": 4400.091,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.068,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.931,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.968,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.977,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.959,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.001,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.089,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.009,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.048,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.921,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.854,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.015,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4400.139,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4399.637,
+            "min": 800.0,
+            "max": 4400.0
+        },
+        {
+            "current": 4381.372,
+            "min": 800.0,
+            "max": 4400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 868747141120,
+            "used": 285143883776
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 33450659840
+    }
+}

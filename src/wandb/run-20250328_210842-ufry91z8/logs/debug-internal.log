@@ -1,0 +1,45 @@
+2025-03-28 21:08:42,456 INFO    StreamThr :3194036 [internal.py:wandb_internal():83] W&B internal server running at pid: 3194036, started at: 2025-03-28 21:08:42.455807
+2025-03-28 21:08:42,461 INFO    WriterThread:3194036 [datastore.py:open_for_write():87] open: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210842-ufry91z8/run-ufry91z8.wandb
+2025-03-28 21:08:43,461 INFO    HandlerThread:3194036 [handler.py:finish():897] shutting down handler
+2025-03-28 21:08:43,461 INFO    WriterThread:3194036 [datastore.py:close():296] close: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210842-ufry91z8/run-ufry91z8.wandb
+2025-03-28 21:08:43,462 ERROR   StreamThr :3194036 [internal.py:wandb_internal():167] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_util.py", line 46, in run
+    self._run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_util.py", line 96, in _run
+    self._process(record)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal.py", line 313, in _process
+    self._sm.send(record)
+    ~~~~~~~~~~~~~^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/sender.py", line 391, in send
+    send_handler(record)
+    ~~~~~~~~~~~~^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/sender.py", line 979, in send_run
+    self._start_run_threads(file_dir)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/sender.py", line 1132, in _start_run_threads
+    self._pusher = FilePusher(self._api, self._fs, settings=self._settings)
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/file_pusher.py", line 63, in __init__
+    self._step_upload = step_upload.StepUpload(
+                        ~~~~~~~~~~~~~~~~~~~~~~^
+        self._api,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        settings=settings,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/filesync/step_upload.py", line 92, in __init__
+    self._pool = concurrent.futures.ThreadPoolExecutor(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/concurrent/futures/__init__.py", line 50, in __getattr__
+    from .thread import ThreadPoolExecutor as te
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/concurrent/futures/thread.py", line 37, in <module>
+    threading._register_atexit(_python_exit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/threading.py", line 1503, in _register_atexit
+    raise RuntimeError("can't register atexit after shutdown")
+RuntimeError: can't register atexit after shutdown

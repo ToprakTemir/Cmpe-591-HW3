@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.13.2",
+  "startedAt": "2025-03-28T17:34:40.176487Z",
+  "program": "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py",
+  "codePath": "src/homework3.py",
+  "git": {
+    "remote": "git@github.com:ToprakTemir/Cmpe-591-HW3.git",
+    "commit": "8349af75304e5654fb55f738bdf4dd7ae775a0c0"
+  },
+  "email": "btoprakt@icloud.com",
+  "root": "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src",
+  "host": "kronos",
+  "executable": "/home/toprak/miniforge3/envs/cmpe591/bin/python",
+  "codePathLocal": "homework3.py",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "868747141120",
+      "used": "285053607936"
+    }
+  },
+  "memory": {
+    "total": "33450659840"
+  },
+  "cpu": {
+    "count": 24,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.6"
+}

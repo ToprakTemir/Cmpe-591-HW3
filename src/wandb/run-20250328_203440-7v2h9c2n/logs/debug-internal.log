@@ -1,0 +1,16 @@
+{"time":"2025-03-28T20:34:40.177663624+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_203440-7v2h9c2n/logs/debug-core.log"}
+{"time":"2025-03-28T20:34:40.280531799+03:00","level":"INFO","msg":"created new stream","id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:40.280552741+03:00","level":"INFO","msg":"stream: started","id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:40.280600363+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:40.280666088+03:00","level":"INFO","msg":"sender: started","stream_id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:40.280693553+03:00","level":"INFO","msg":"handler: started","stream_id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:40.575620792+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-28T20:34:40.640089912+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-28T20:34:40.640584776+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-28T20:34:41.60468995+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-metadata.json","runtime_seconds":0.802204288,"progress":"1.1KB/1.1KB"},{"desc":"uploading output.log","runtime_seconds":0.080474199,"progress":"1.0KB/1.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.080466548,"progress":"24B/24B"}],"total_operations":3}}
+{"time":"2025-03-28T20:34:42.416862835+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-28T20:34:42.740737792+03:00","level":"INFO","msg":"stream: closing","id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:42.740743882+03:00","level":"INFO","msg":"handler: closed","stream_id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:42.740746961+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:42.740753071+03:00","level":"INFO","msg":"sender: closed","stream_id":"7v2h9c2n"}
+{"time":"2025-03-28T20:34:42.740770998+03:00","level":"INFO","msg":"stream: closed","id":"7v2h9c2n"}

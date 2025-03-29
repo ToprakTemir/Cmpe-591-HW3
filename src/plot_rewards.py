@@ -19,83 +19,35 @@ def get_latest_reward_list():
 # reward_list_path = "HW3/rewards/rewards_list_2024.12.13-15:05:30.pth"
 reward_list_path = get_latest_reward_list()
 
-# Create subplots: one for raw data, one for smoothed data
-fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 10))
+if not reward_list_path:
+    raise ValueError("reward list could not be found")
 
-# Initialize the line objects for raw and smoothed data
-line_raw, = ax1.plot([], [], label="Raw Training Reward", color="blue")
-ax1.set_title("Raw Training Reward")
-ax1.set_xlabel("Epoch")
-ax1.set_ylabel("Reward")
-ax1.legend()
+# Read the rewards from file: each line is expected to be a float value for each episode
+with open(reward_list_path, 'r') as file:
+    rewards = [float(line.strip()) for line in file if line.strip()]
 
-line_smoothed, = ax2.plot([], [], label="Smoothed Training Reward", color="red")
-ax2.set_title("Smoothed Training Reward")
-ax2.set_xlabel("Epoch")
-ax2.set_ylabel("Reward")
-ax2.legend()
+# Function for moving average smoothing
+def moving_average(data, window_size=10):
+    if window_size < 1:
+        return data
+    # Using 'valid' mode to avoid boundary effects
+    return np.convolve(data, np.ones(window_size)/window_size, mode='valid')
 
+# Set your desired smoothing window size (adjust as needed)
+window_size = 100
+smoothed_rewards = moving_average(rewards, window_size)
 
-def smooth(data, window_size = 100):
-    smoothed = []
-    current = data[0]
-    for i in range(len(data)):
-        start = max(0, i - window_size)
-        smoothed.append(np.mean(data[start:i+1]))
-    return np.array(smoothed)
+# Create x values for episodes
+episodes = np.arange(1, len(rewards) + 1)
+# Adjust the x-axis for the smoothed rewards (which has fewer points due to convolution 'valid' mode)
+smoothed_episodes = np.arange(window_size, len(rewards) + 1)
 
-
-# Update the plots
-def update_plots(data, line_raw, line_smoothed, ax1, ax2):
-    # Update the raw data plot
-    line_raw.set_xdata(range(len(data)))
-    line_raw.set_ydata(data)
-    ax1.relim()
-    ax1.autoscale_view()
-
-    # Smooth the data with a larger window size or exponential smoothing
-    smoothed_data = smooth(data, window_size=200)
-
-    # Update the smoothed data plot
-    line_smoothed.set_xdata(range(len(smoothed_data)))
-    line_smoothed.set_ydata(smoothed_data)
-    ax2.relim()
-    ax2.autoscale_view()
-
-    # draw a vertical line at data point 4280
-    ax1.axvline(x=4280, color='r', linestyle='--')
-    ax2.axvline(x=4280, color='r', linestyle='--')
-
-    # Refresh the plots
-    plt.draw()
-    fig.canvas.flush_events()
-
-
-while True:
-    try:
-        # Read the data from file
-        data = []
-        with open(reward_list_path, "r") as f:
-            for ln in f:
-                if ln == "\n":
-                    continue
-                data.append(float(ln.strip()))  # Assuming each line is a single float value
-        data = np.array(data)
-
-        print(f"Read {len(data)} data points from {reward_list_path}")
-
-        # Update plots
-        update_plots(data, line_raw, line_smoothed, ax1, ax2)
-
-        # Save the updated figure as PNG
-        plt.savefig("latest_plot.png", bbox_inches='tight')
-
-        # Flush the file explicitly to ensure immediate writing
-        with open("latest_plot.png", "rb") as png_file:
-            os.fsync(png_file.fileno())
-
-    except Exception as e:
-        print(f"Error reading or plotting data: {e}")
-
-    # Pause for 60 seconds before the next update
-    time.sleep(5)
+# Plot the raw and smoothed rewards
+plt.figure(figsize=(12, 6))
+plt.plot(episodes, rewards, label='Raw Reward', alpha=0.5)
+plt.plot(smoothed_episodes, smoothed_rewards, label='Smoothed Reward', linewidth=2)
+plt.xlabel('Episode')
+plt.ylabel('Reward')
+plt.title('Episode Reward Graph')
+plt.legend()
+plt.show()

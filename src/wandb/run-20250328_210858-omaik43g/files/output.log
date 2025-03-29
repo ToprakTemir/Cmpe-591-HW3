@@ -1,0 +1,9 @@
+Episode 0 collected in 298.65118050575256 seconds, reward=-174.20133910061827, flush=True
+total loss: -191.65370178222656
+model updated in 101.92148494720459 seconds
+Episode 1 collected in 346.02994084358215 seconds, reward=-115.99760920896068, flush=True
+total loss: -134.6915740966797
+model updated in 94.21592283248901 seconds
+Episode 2 collected in 360.5849857330322 seconds, reward=-162.14646009082267, flush=True
+total loss: -192.87615966796875
+model updated in 84.16667556762695 seconds

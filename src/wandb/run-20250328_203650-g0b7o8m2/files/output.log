@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/wandb_config.py", line 165, in __getattr__
+    return self.__getitem__(key)
+           ~~~~~~~~~~~~~~~~^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'model_lr'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 259, in sweep_reinforce
+    model_lr = config.model_lr,
+               ^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/wandb_config.py", line 167, in __getattr__
+    raise AttributeError(
+        f"{self.__class__!r} object has no attribute {key!r}"
+    ) from ke
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'model_lr'

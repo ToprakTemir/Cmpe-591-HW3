@@ -1,0 +1,102 @@
+2025-03-28 21:07:34,571 INFO    StreamThr :3184061 [internal.py:wandb_internal():83] W&B internal server running at pid: 3184061, started at: 2025-03-28 21:07:34.571029
+2025-03-28 21:07:34,573 INFO    WriterThread:3184061 [datastore.py:open_for_write():87] open: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/run-jlkfdij1.wandb
+2025-03-28 21:07:35,075 INFO    SenderThread:3184061 [dir_watcher.py:__init__():211] watching files in: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files
+2025-03-28 21:07:35,075 INFO    SenderThread:3184061 [sender.py:_start_run_threads():1134] run started: jlkfdij1 with start time 1743185254.570105
+2025-03-28 21:07:35,088 INFO    HandlerThread:3184061 [system_monitor.py:start():187] Starting system monitor
+2025-03-28 21:07:35,088 INFO    SystemMonitor:3184061 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-03-28 21:07:35,089 INFO    HandlerThread:3184061 [system_monitor.py:probe():207] Collecting system info
+2025-03-28 21:07:35,092 INFO    SystemMonitor:3184061 [interfaces.py:start():186] Started cpu monitoring
+2025-03-28 21:07:35,092 INFO    SystemMonitor:3184061 [interfaces.py:start():186] Started disk monitoring
+2025-03-28 21:07:35,094 INFO    SystemMonitor:3184061 [interfaces.py:start():186] Started gpu monitoring
+2025-03-28 21:07:35,094 INFO    SystemMonitor:3184061 [interfaces.py:start():186] Started memory monitoring
+2025-03-28 21:07:35,094 INFO    SystemMonitor:3184061 [interfaces.py:start():186] Started network monitoring
+2025-03-28 21:07:35,107 INFO    HandlerThread:3184061 [system_monitor.py:probe():217] Finished collecting system info
+2025-03-28 21:07:35,107 INFO    HandlerThread:3184061 [system_monitor.py:probe():220] Publishing system info
+2025-03-28 21:07:36,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/conda-environment.yaml
+2025-03-28 21:07:36,231 INFO    HandlerThread:3184061 [system_monitor.py:probe():222] Finished publishing system info
+2025-03-28 21:07:36,233 INFO    SenderThread:3184061 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2025-03-28 21:07:36,617 INFO    SenderThread:3184061 [sender.py:send_exit():554] handling exit code: 1
+2025-03-28 21:07:36,617 INFO    SenderThread:3184061 [sender.py:send_exit():556] handling runtime: 1
+2025-03-28 21:07:36,617 INFO    SenderThread:3184061 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:07:36,617 INFO    SenderThread:3184061 [sender.py:send_exit():562] send defer
+2025-03-28 21:07:36,617 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 0
+2025-03-28 21:07:36,617 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 0
+2025-03-28 21:07:36,618 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 1
+2025-03-28 21:07:36,618 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 1
+2025-03-28 21:07:36,618 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 1
+2025-03-28 21:07:36,618 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 2
+2025-03-28 21:07:36,618 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 2
+2025-03-28 21:07:36,618 INFO    HandlerThread:3184061 [system_monitor.py:finish():196] Stopping system monitor
+2025-03-28 21:07:36,618 INFO    HandlerThread:3184061 [interfaces.py:finish():198] Joined cpu monitor
+2025-03-28 21:07:36,618 INFO    HandlerThread:3184061 [interfaces.py:finish():198] Joined disk monitor
+2025-03-28 21:07:36,650 INFO    HandlerThread:3184061 [interfaces.py:finish():198] Joined gpu monitor
+2025-03-28 21:07:36,650 INFO    HandlerThread:3184061 [interfaces.py:finish():198] Joined memory monitor
+2025-03-28 21:07:36,650 INFO    HandlerThread:3184061 [interfaces.py:finish():198] Joined network monitor
+2025-03-28 21:07:36,650 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 2
+2025-03-28 21:07:36,650 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 3
+2025-03-28 21:07:36,651 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 3
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 3
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 4
+2025-03-28 21:07:36,651 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 4
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 4
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 5
+2025-03-28 21:07:36,651 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 5
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 5
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 6
+2025-03-28 21:07:36,651 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 6
+2025-03-28 21:07:36,651 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 6
+2025-03-28 21:07:36,957 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 7
+2025-03-28 21:07:36,957 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 7
+2025-03-28 21:07:36,957 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 7
+2025-03-28 21:07:36,965 INFO    wandb-upload_0:3184061 [upload_job.py:push():130] Uploaded file /tmp/tmpiqnlbbwjwandb/pxhfk8kp-wandb-metadata.json
+2025-03-28 21:07:37,075 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/conda-environment.yaml
+2025-03-28 21:07:37,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/config.yaml
+2025-03-28 21:07:37,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/wandb-summary.json
+2025-03-28 21:07:37,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/output.log
+2025-03-28 21:07:37,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/requirements.txt
+2025-03-28 21:07:37,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_created():272] file/dir created: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/wandb-metadata.json
+2025-03-28 21:07:38,619 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 8
+2025-03-28 21:07:38,620 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 8
+2025-03-28 21:07:38,620 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 8
+2025-03-28 21:07:38,620 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 9
+2025-03-28 21:07:38,621 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 9
+2025-03-28 21:07:38,621 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 9
+2025-03-28 21:07:38,621 INFO    SenderThread:3184061 [dir_watcher.py:finish():359] shutting down directory watcher
+2025-03-28 21:07:39,076 INFO    Thread-12 :3184061 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/output.log
+2025-03-28 21:07:39,076 INFO    SenderThread:3184061 [dir_watcher.py:finish():389] scan: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files
+2025-03-28 21:07:39,077 INFO    SenderThread:3184061 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/wandb-metadata.json wandb-metadata.json
+2025-03-28 21:07:39,077 INFO    SenderThread:3184061 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/conda-environment.yaml conda-environment.yaml
+2025-03-28 21:07:39,077 INFO    SenderThread:3184061 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/requirements.txt requirements.txt
+2025-03-28 21:07:39,078 INFO    SenderThread:3184061 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/wandb-summary.json wandb-summary.json
+2025-03-28 21:07:39,078 INFO    SenderThread:3184061 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/output.log output.log
+2025-03-28 21:07:39,079 INFO    SenderThread:3184061 [dir_watcher.py:finish():403] scan save: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/config.yaml config.yaml
+2025-03-28 21:07:39,079 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 10
+2025-03-28 21:07:39,079 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 10
+2025-03-28 21:07:39,081 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 10
+2025-03-28 21:07:39,081 INFO    SenderThread:3184061 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-28 21:07:39,544 INFO    wandb-upload_0:3184061 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/conda-environment.yaml
+2025-03-28 21:07:39,658 INFO    wandb-upload_1:3184061 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/requirements.txt
+2025-03-28 21:07:39,683 INFO    wandb-upload_3:3184061 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/output.log
+2025-03-28 21:07:39,685 INFO    wandb-upload_2:3184061 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/wandb-summary.json
+2025-03-28 21:07:40,146 INFO    wandb-upload_4:3184061 [upload_job.py:push():130] Uploaded file /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/files/config.yaml
+2025-03-28 21:07:40,346 INFO    Thread-11 (_thread_body):3184061 [sender.py:transition_state():582] send defer: 11
+2025-03-28 21:07:40,346 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 11
+2025-03-28 21:07:40,347 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 11
+2025-03-28 21:07:40,347 INFO    SenderThread:3184061 [file_pusher.py:join():175] waiting for file pusher
+2025-03-28 21:07:40,347 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 12
+2025-03-28 21:07:40,347 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 12
+2025-03-28 21:07:40,347 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 12
+2025-03-28 21:07:40,347 INFO    SenderThread:3184061 [file_stream.py:finish():601] file stream finish called
+2025-03-28 21:07:40,557 INFO    SenderThread:3184061 [file_stream.py:finish():605] file stream finish is done
+2025-03-28 21:07:40,557 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 13
+2025-03-28 21:07:40,557 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 13
+2025-03-28 21:07:40,557 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 13
+2025-03-28 21:07:40,558 INFO    SenderThread:3184061 [sender.py:transition_state():582] send defer: 14
+2025-03-28 21:07:40,558 INFO    HandlerThread:3184061 [handler.py:handle_request_defer():188] handle defer: 14
+2025-03-28 21:07:40,558 INFO    SenderThread:3184061 [sender.py:send_request_defer():578] handle sender defer: 14
+2025-03-28 21:07:40,560 INFO    HandlerThread:3184061 [handler.py:finish():897] shutting down handler
+2025-03-28 21:07:41,559 INFO    WriterThread:3184061 [datastore.py:close():296] close: /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210734-jlkfdij1/run-jlkfdij1.wandb
+2025-03-28 21:07:41,559 INFO    SenderThread:3184061 [sender.py:finish():1582] shutting down sender
+2025-03-28 21:07:41,559 INFO    SenderThread:3184061 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-28 21:07:41,559 INFO    SenderThread:3184061 [file_pusher.py:join():175] waiting for file pusher

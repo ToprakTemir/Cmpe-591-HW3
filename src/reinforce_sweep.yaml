@@ -1,0 +1,31 @@
+program: homework3.py
+
+method: bayes
+metric:
+  name: avg_episode_length
+  goal: minimize
+
+
+parameters:
+  num_episodes_per_update:
+    values: [1, 2, 3, 4, 5, 6, 8, 10]
+  model_lr:
+    min: 1e-5
+    max: 1e-3
+    distribution: log_uniform_values
+  c_ee_to_obj:
+    min: 0.0
+    max: 2.0
+    distribution: uniform
+  c_obj_to_target:
+    min: 0.0
+    max: 2.0
+    distribution: uniform
+  c_direction:
+    min: 0.0
+    max: 2.0
+    distribution: uniform
+  completion_reward:
+    min: 0.0
+    max: 20.0
+    distribution: uniform

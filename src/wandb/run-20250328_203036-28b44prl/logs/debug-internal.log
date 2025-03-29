@@ -1,0 +1,17 @@
+{"time":"2025-03-28T20:30:36.065307678+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_203036-28b44prl/logs/debug-core.log"}
+{"time":"2025-03-28T20:30:36.167690298+03:00","level":"INFO","msg":"created new stream","id":"28b44prl"}
+{"time":"2025-03-28T20:30:36.167705717+03:00","level":"INFO","msg":"stream: started","id":"28b44prl"}
+{"time":"2025-03-28T20:30:36.167719232+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"28b44prl"}
+{"time":"2025-03-28T20:30:36.167716982+03:00","level":"INFO","msg":"handler: started","stream_id":"28b44prl"}
+{"time":"2025-03-28T20:30:36.16774408+03:00","level":"INFO","msg":"sender: started","stream_id":"28b44prl"}
+{"time":"2025-03-28T20:30:36.386440216+03:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-28T20:30:36.386531085+03:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-03-28T20:30:37.388312992+03:00","level":"INFO","msg":"stream: closing","id":"28b44prl"}
+{"time":"2025-03-28T20:30:37.388362105+03:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-03-28T20:30:37.612275175+03:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-28T20:30:37.612327108+03:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project topraktemir/591HW3 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-03-28T20:30:37.612486867+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-28T20:30:37.612501377+03:00","level":"INFO","msg":"handler: closed","stream_id":"28b44prl"}
+{"time":"2025-03-28T20:30:37.612509127+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"28b44prl"}
+{"time":"2025-03-28T20:30:37.612544898+03:00","level":"INFO","msg":"sender: closed","stream_id":"28b44prl"}
+{"time":"2025-03-28T20:30:37.612565047+03:00","level":"INFO","msg":"stream: closed","id":"28b44prl"}

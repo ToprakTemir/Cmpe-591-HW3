@@ -1,0 +1,14 @@
+2025-03-28 20:36:51,311 INFO    MainThread:2943871 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_203651-dhkuwb3l/logs/debug.log
+2025-03-28 20:36:51,311 INFO    MainThread:2943871 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_203651-dhkuwb3l/logs/debug-internal.log
+2025-03-28 20:36:51,311 INFO    MainThread:2943871 [wandb_init.py:init():761] calling init triggers
+2025-03-28 20:36:51,311 INFO    MainThread:2943871 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-03-28 20:36:51,311 INFO    MainThread:2943871 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-03-28 20:36:51,312 INFO    MainThread:2943871 [wandb_run.py:_finish():2112] finishing run topraktemir-/Cmpe-591-HW3/g0b7o8m2
+2025-03-28 20:36:51,312 INFO    MainThread:2943871 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-28 20:36:51,313 INFO    MainThread:2943871 [wandb_run.py:_restore():2322] restore
+2025-03-28 20:36:51,313 INFO    MainThread:2943871 [wandb_run.py:_restore():2328] restore done
+2025-03-28 20:36:52,813 INFO    MainThread:2943871 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-28 20:36:52,814 INFO    MainThread:2943871 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-28 20:36:52,814 INFO    MainThread:2943871 [wandb_run.py:_footer_sync_info():3917] logging synced files
+2025-03-28 20:36:53,814 INFO    MsgRouterThr:2943871 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.

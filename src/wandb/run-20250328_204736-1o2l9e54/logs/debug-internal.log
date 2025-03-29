@@ -1,0 +1,16 @@
+{"time":"2025-03-28T20:47:36.808854083+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_204736-1o2l9e54/logs/debug-core.log"}
+{"time":"2025-03-28T20:47:36.911210665+03:00","level":"INFO","msg":"created new stream","id":"1o2l9e54"}
+{"time":"2025-03-28T20:47:36.911230111+03:00","level":"INFO","msg":"stream: started","id":"1o2l9e54"}
+{"time":"2025-03-28T20:47:36.911277052+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"1o2l9e54"}
+{"time":"2025-03-28T20:47:36.911322123+03:00","level":"INFO","msg":"sender: started","stream_id":"1o2l9e54"}
+{"time":"2025-03-28T20:47:36.911340199+03:00","level":"INFO","msg":"handler: started","stream_id":"1o2l9e54"}
+{"time":"2025-03-28T20:47:37.296900888+03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-28T20:55:56.982526727+03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-28T20:55:56.982841522+03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-28T20:55:57.888088401+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-28T20:55:57.983218193+03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 23-46","runtime_seconds":0.095030471}],"total_operations":1}}
+{"time":"2025-03-28T20:55:58.141519117+03:00","level":"INFO","msg":"stream: closing","id":"1o2l9e54"}
+{"time":"2025-03-28T20:55:58.141528158+03:00","level":"INFO","msg":"handler: closed","stream_id":"1o2l9e54"}
+{"time":"2025-03-28T20:55:58.141534287+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1o2l9e54"}
+{"time":"2025-03-28T20:55:58.141561799+03:00","level":"INFO","msg":"sender: closed","stream_id":"1o2l9e54"}
+{"time":"2025-03-28T20:55:58.141567191+03:00","level":"INFO","msg":"stream: closed","id":"1o2l9e54"}

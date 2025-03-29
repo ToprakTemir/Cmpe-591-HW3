@@ -1,0 +1,17 @@
+{"time":"2025-03-28T20:31:40.231397591+03:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_203140-9siwmdpi/logs/debug-core.log"}
+{"time":"2025-03-28T20:31:40.3340754+03:00","level":"INFO","msg":"created new stream","id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:40.334098234+03:00","level":"INFO","msg":"stream: started","id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:40.334111214+03:00","level":"INFO","msg":"writer: Do: started","stream_id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:40.334180647+03:00","level":"INFO","msg":"sender: started","stream_id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:40.334200564+03:00","level":"INFO","msg":"handler: started","stream_id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:40.553477604+03:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-28T20:31:40.553562692+03:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-03-28T20:31:41.555315122+03:00","level":"INFO","msg":"stream: closing","id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:41.555355752+03:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-03-28T20:31:41.775504969+03:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-03-28T20:31:41.775552009+03:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project topraktemir/591HW3 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-03-28T20:31:41.775718916+03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-28T20:31:41.775733954+03:00","level":"INFO","msg":"handler: closed","stream_id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:41.775741604+03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:41.775772765+03:00","level":"INFO","msg":"sender: closed","stream_id":"9siwmdpi"}
+{"time":"2025-03-28T20:31:41.775775663+03:00","level":"INFO","msg":"stream: closed","id":"9siwmdpi"}

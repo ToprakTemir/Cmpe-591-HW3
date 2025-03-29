@@ -1,0 +1,55 @@
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_setup.py:_flush():67] Configure stats pid to 3193820
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_setup.py:_flush():67] Loading settings from /home/toprak/.config/wandb/settings
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_setup.py:_flush():67] Loading settings from /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/settings
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210842-ufry91z8/logs/debug.log
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/wandb/run-20250328_210842-ufry91z8/logs/debug-internal.log
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_init.py:init():761] calling init triggers
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_init.py:init():766] wandb.init called with sweep_config: {'c_direction': 1.6557241352677052, 'c_ee_to_obj': 1.9505345607811273, 'c_obj_to_target': 1.491875470557109, 'completion_reward': 7.639123491402593, 'model_lr': 4.204211648275218e-05, 'num_episodes_per_update': 3}
+config: {'model_lr': 0.0001, 'c_ee_to_obj': 0.1, 'c_obj_to_target': 0.2, 'c_direction': 0.5, 'completion_reward': 10, '_wandb': {}}
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_init.py:init():784] starting backend
+2025-03-28 21:08:42,441 INFO    MainThread:3193820 [wandb_init.py:init():788] sending inform_init request
+2025-03-28 21:08:42,447 INFO    MainThread:3193820 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-28 21:08:42,447 INFO    MainThread:3193820 [wandb_init.py:init():798] backend started and connected
+2025-03-28 21:08:42,447 INFO    MainThread:3193820 [wandb_run.py:_config_callback():1261] config_cb None None {'c_direction': 1.6557241352677052, 'c_ee_to_obj': 1.9505345607811273, 'c_obj_to_target': 1.491875470557109, 'completion_reward': 7.639123491402593, 'model_lr': 4.204211648275218e-05, 'num_episodes_per_update': 3}
+2025-03-28 21:08:42,448 INFO    MainThread:3193820 [wandb_init.py:init():891] updated telemetry
+2025-03-28 21:08:42,453 INFO    MainThread:3193820 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-28 21:08:42,493 WARNING MainThread:3193820 [wandb_init.py:init():1472] interrupted
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 1468, in init
+    return wi.init(run_settings, run_config)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/wandb_init.py", line 941, in init
+    result = wait_with_progress(
+        run_init_handle,
+    ...<2 lines>...
+        display_progress=display_init_message,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        [handle],
+        ^^^^^^^^^
+    ...<2 lines>...
+        display_progress=display_progress,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )[0]
+    ^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 70, in wait_all_with_progress
+    return _wait_handles(handle_list, timeout=progress_after)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 110, in _wait_handles
+    results.append(handle.wait_or(timeout=remaining_timeout))
+                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/mailbox/mailbox_handle.py", line 122, in wait_or
+    return self._fn(self._handle.wait_or(timeout=timeout))
+                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/mailbox/response_handle.py", line 88, in wait_or
+    if not self._event.wait(timeout=timeout):
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/threading.py", line 659, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/threading.py", line 363, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2025-03-28 21:08:42,930 INFO    MsgRouterThr:3193820 [mailbox.py:close():129] Closing mailbox, abandoning 0 handles.

@@ -18,7 +18,11 @@ class Hw3Env(environment.BaseEnv):
         super().__init__(**kwargs)
         self._delta = 0.05
         self._goal_thresh = 0.075  # easier goal detection
-        self._max_timesteps = 50  # allow more steps
+        self._max_timesteps = 300  # allow more steps
+        self.c_ee_to_obj = 0.1
+        self.c_obj_to_target = 0.2
+        self.c_direction = 0.5
+        self.completion_reward = 10
         self._prev_obj_pos = None  # track object movement
 
     def _create_scene(self, seed=None):
@@ -87,20 +91,21 @@ class Hw3Env(environment.BaseEnv):
         d_obj_to_goal = np.linalg.norm(obj_pos - goal_pos)
 
         # distance-based rewards
-        r_ee_to_obj = -0.1 * d_ee_to_obj  # getting closer to object
-        r_obj_to_goal = -0.2 * d_obj_to_goal  # moving object to goal
+        r_ee_to_obj = - self.c_ee_to_obj * d_ee_to_obj  # getting closer to object
+        r_obj_to_goal = - self.c_obj_to_target * d_obj_to_goal  # moving object to goal
 
         # direction bonus
         obj_movement = obj_pos - self._prev_obj_pos
         dir_to_goal = (goal_pos - obj_pos) / (np.linalg.norm(goal_pos - obj_pos) + 1e-8)
-        r_direction = 0.5 * max(0, np.dot(obj_movement / (np.linalg.norm(obj_movement) + 1e-8), dir_to_goal))
+        r_direction = self.c_direction * max(0, np.dot(obj_movement / (np.linalg.norm(obj_movement) + 1e-8), dir_to_goal))
         if np.linalg.norm(obj_movement) < 1e-6:  # Avoid division by zero
             r_direction = 0.0
 
         # terminal bonus
-        r_terminal = 10.0 if self.is_terminal() else 0.0
+        r_terminal = self.completion_reward if self.is_terminal() else 0.0
 
         r_step = -0.1  # penalty for each step
+        # r_step = 0
 
         self._prev_obj_pos = obj_pos.copy()
         return r_ee_to_obj + r_obj_to_goal + r_direction + r_terminal + r_step
@@ -152,12 +157,30 @@ class Hw3Env(environment.BaseEnv):
     #     return state, reward, terminal, truncated
 
 
-def reinforce_main():
-    env = Hw3Env(render_mode="offscreen")
+def reinforce_main(
+        num_episodes_per_update = 1,
+        env_max_timesteps = 200,
+        model_lr = 1e-4,
+        goal_tresh = 0.075,
+        c_ee_to_obj = 0.1,
+        c_obj_to_target = 0.2,
+        c_direction = 0.5,
+        completion_reward = 10,
+):
 
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    num_episodes_per_update = 6
-    agent = REINFORCE_Agent(model=VPG(), device=device, num_episodes_per_update=num_episodes_per_update)
+    env = Hw3Env(render_mode="offscreen")
+    env._max_timesteps = env_max_timesteps
+    env._goal_thresh = goal_tresh
+    env.c_ee_to_obj = c_ee_to_obj
+    env.c_obj_to_target = c_obj_to_target
+    env.c_direction = c_direction
+    env.completion_reward = completion_reward
+
+    # device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cpu")
+    agent = REINFORCE_Agent(model=VPG(), device=device, num_episodes_per_update=num_episodes_per_update, lr=model_lr)
+
+
 
     reward_save_dir = "./reinforce_rewards/"
     if not os.path.exists(reward_save_dir):
@@ -172,18 +195,21 @@ def reinforce_main():
 
     episode_rewards_file = open(reward_save_path, "w")
 
-    num_episodes = 100_000
+    num_episodes = 5_000
+    episode_lengths = []
     for i in range(num_episodes):
         start_time = time.time()
-
-        env.reset()
-        state = env.high_level_state()
-        done = False
-
-        cumulative_reward = 0.0
-        total_log_prob = 0.0
-
         for episode in range(num_episodes_per_update):
+            env.reset()
+            state = env.high_level_state()
+            done = False
+
+            ep_lengths = []
+            steps_this_episode = 0
+
+            cumulative_reward = 0.0
+            total_log_prob = 0.0
+
             while not done:
                 action, log_prob = agent.predict(torch.tensor(state, dtype=torch.float32).to(device))
                 next_state, reward, is_terminal, is_truncated = env.step(action)
@@ -193,24 +219,65 @@ def reinforce_main():
 
                 done = is_terminal or is_truncated
                 state = next_state
+                steps_this_episode += 1
 
             agent.add_episode({"total_log_prob": total_log_prob,
                                "cumulative_reward": cumulative_reward,
                                "steps_per_episode": env._max_timesteps})
+            ep_lengths.append(steps_this_episode)
+
+
+        episode_lengths.append(np.mean(ep_lengths))
 
         episode_rewards_file.write(f"{cumulative_reward}\n")
         episode_rewards_file.flush()
         data_collect_end_time = time.time()
-        print(f"Episode {i} collected in {data_collect_end_time - start_time} seconds, reward={cumulative_reward}")
+        print(f"Episode {i} collected in {data_collect_end_time - start_time} seconds, reward={cumulative_reward}, flush=True")
 
         agent.update_model()
         agent.save_model(model_save_path)
-        print(f"model updated in {time.time() - data_collect_end_time} seconds")
+        print(f"model updated in {time.time() - data_collect_end_time} seconds", flush=True)
         print()
 
+        avg_episode_length = np.mean(episode_lengths)
+        wandb.log({
+            "episode": i,
+            "cumulative_reward": cumulative_reward,
+            "avg_episode_length": avg_episode_length,
+        })
 
+
+def sweep_reinforce(config=None):
+    with wandb.init(config=config):
+        config = wandb.config
+
+        reinforce_main(
+            # num_episodes_per_update = config.num_episodes_per_update, constant 1
+            # env_max_timesteps = config.env_max_timesteps, constant 200
+            # goal_tresh = config.goal_tresh, constant 0.075
+            model_lr = config.model_lr,
+            c_ee_to_obj = config.c_ee_to_obj,
+            c_obj_to_target = config.c_obj_to_target,
+            c_direction = config.c_direction,
+            completion_reward = config.completion_reward,
+        )
+
+
+import wandb
 if __name__ == "__main__":
-    reinforce_main()
+
+    default_config = {
+        "model_lr": 1e-4,  # default learning rate
+        "c_ee_to_obj": 0.1,
+        "c_obj_to_target": 0.2,
+        "c_direction": 0.5,
+        "completion_reward": 10,
+    }
+
+    # reinforce_main()
+    sweep_reinforce(default_config)
+
+
     # sac_main()
 
 

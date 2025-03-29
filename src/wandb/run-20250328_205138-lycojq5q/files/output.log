@@ -1,0 +1,37 @@
+/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'Failed to detect any supported platform'
+  warnings.warn(message, GLFWError)
+/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/glfw/__init__.py:917: GLFWError: (65537) b'The GLFW library is not initialized'
+  warnings.warn(message, GLFWError)
+Traceback (most recent call last):
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 254, in sweep_reinforce
+    reinforce_main(
+    ~~~~~~~~~~~~~~^
+        # num_episodes_per_update = config.num_episodes_per_update, constant 1
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        completion_reward = config.completion_reward,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 171, in reinforce_main
+    env = Hw3Env(render_mode="offscreen")
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 18, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/environment.py", line 30, in __init__
+    self.reset()
+    ~~~~~~~~~~^^
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/homework3.py", line 47, in reset
+    super().reset()
+    ~~~~~~~~~~~~~^^
+  File "/home/toprak/PycharmProjects/cmpe591/Cmpe-591-HW3/src/environment.py", line 57, in reset
+    self.viewer = mujoco.Renderer(self.model, 128, 128)
+                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/mujoco/renderer.py", line 87, in __init__
+    self._mjr_context = _render.MjrContext(
+                        ~~~~~~~~~~~~~~~~~~^
+        model, _enums.mjtFontScale.mjFONTSCALE_150.value
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+mujoco.FatalError: an OpenGL platform library has not been loaded into this process, this most likely means that a valid OpenGL context has not been created before mjr_makeContext was called
