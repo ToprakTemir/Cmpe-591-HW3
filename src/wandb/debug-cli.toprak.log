@@ -1081,3 +1081,2016 @@
 <h2></h2>
 </body></html>
 
+2025-03-30 22:35:13 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:13 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:13 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:13 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:13 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:13 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:13 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:13 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:14 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:14 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:14 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:14 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:14 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:14 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:14 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:15 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:15 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:15 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:15 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:15 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:15 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:15 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:15 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:15 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:15 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:16 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:16 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:16 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:16 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:17 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:17 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:17 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:17 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:17 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:18 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:18 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:18 ERROR 429 response executing GraphQL.
+2025-03-30 22:35:18 ERROR {"error":"rate limit exceeded"}
+2025-03-30 22:35:18 INFO Closing mailbox, abandoning 0 handles.
+2025-03-30 22:35:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:03 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:04 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir-/Cmpe-591-HW3-src/152rl4z8 not found
+
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:47:04 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:48:40 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:02 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3/xxfe5gse not found
+
+2025-04-02 19:50:17 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:50:18 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:51:08 INFO Running runs: []
+2025-04-02 19:51:08 INFO Running runs: []
+2025-04-02 19:51:08 INFO Running runs: []
+2025-04-02 19:51:08 INFO Running runs: []
+2025-04-02 19:51:08 INFO Running runs: []
+2025-04-02 19:51:09 INFO Running runs: []
+2025-04-02 19:51:09 INFO Running runs: []
+2025-04-02 19:51:09 INFO Running runs: []
+2025-04-02 19:51:09 INFO Running runs: []
+2025-04-02 19:51:09 INFO Running runs: []
+2025-04-02 19:51:09 INFO Agent received command: run
+2025-04-02 19:51:09 INFO Agent starting run with config:
+	c_direction: 1.2581010971862374
+	c_ee_to_obj: 1.6938514688991728
+	c_obj_to_target: 1.2400092947562145
+	completion_reward: 15.96534140483178
+	model_lr: 4.5048779979743505e-05
+	num_episodes_per_update: 4
+2025-04-02 19:51:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.2581010971862374 --c_ee_to_obj=1.6938514688991728 --c_obj_to_target=1.2400092947562145 --completion_reward=15.96534140483178 --model_lr=4.5048779979743505e-05 --num_episodes_per_update=4
+2025-04-02 19:51:09 INFO Agent received command: run
+2025-04-02 19:51:09 INFO Agent starting run with config:
+	c_direction: 0.1100984221542658
+	c_ee_to_obj: 0.6544971840165483
+	c_obj_to_target: 1.5973942768829694
+	completion_reward: 14.926350899784872
+	model_lr: 0.0001693773918239533
+	num_episodes_per_update: 6
+2025-04-02 19:51:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.1100984221542658 --c_ee_to_obj=0.6544971840165483 --c_obj_to_target=1.5973942768829694 --completion_reward=14.926350899784872 --model_lr=0.0001693773918239533 --num_episodes_per_update=6
+2025-04-02 19:51:09 INFO Agent received command: run
+2025-04-02 19:51:09 INFO Agent starting run with config:
+	c_direction: 1.877825628277322
+	c_ee_to_obj: 0.9508491160515108
+	c_obj_to_target: 0.619082461806834
+	completion_reward: 13.082124811019623
+	model_lr: 2.6718814158120127e-05
+	num_episodes_per_update: 4
+2025-04-02 19:51:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.877825628277322 --c_ee_to_obj=0.9508491160515108 --c_obj_to_target=0.619082461806834 --completion_reward=13.082124811019623 --model_lr=2.6718814158120127e-05 --num_episodes_per_update=4
+2025-04-02 19:51:09 INFO Agent received command: run
+2025-04-02 19:51:09 INFO Agent starting run with config:
+	c_direction: 0.649610292563892
+	c_ee_to_obj: 1.2446485025094158
+	c_obj_to_target: 0.31671152232660726
+	completion_reward: 8.191286482191941
+	model_lr: 0.0001581472306030814
+	num_episodes_per_update: 6
+2025-04-02 19:51:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.649610292563892 --c_ee_to_obj=1.2446485025094158 --c_obj_to_target=0.31671152232660726 --completion_reward=8.191286482191941 --model_lr=0.0001581472306030814 --num_episodes_per_update=6
+2025-04-02 19:51:09 INFO Agent received command: run
+2025-04-02 19:51:09 INFO Agent starting run with config:
+	c_direction: 0.3619781384730916
+	c_ee_to_obj: 1.3201699398681317
+	c_obj_to_target: 0.32466054309229797
+	completion_reward: 18.316566976923756
+	model_lr: 0.00010180143091647484
+	num_episodes_per_update: 2
+2025-04-02 19:51:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.3619781384730916 --c_ee_to_obj=1.3201699398681317 --c_obj_to_target=0.32466054309229797 --completion_reward=18.316566976923756 --model_lr=0.00010180143091647484 --num_episodes_per_update=2
+2025-04-02 19:51:10 INFO Agent received command: run
+2025-04-02 19:51:10 INFO Agent starting run with config:
+	c_direction: 1.9673985807147285
+	c_ee_to_obj: 1.89676746409906
+	c_obj_to_target: 0.2174666976729802
+	completion_reward: 4.077778948509241
+	model_lr: 0.00012238362058439393
+	num_episodes_per_update: 4
+2025-04-02 19:51:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.9673985807147285 --c_ee_to_obj=1.89676746409906 --c_obj_to_target=0.2174666976729802 --completion_reward=4.077778948509241 --model_lr=0.00012238362058439393 --num_episodes_per_update=4
+2025-04-02 19:51:10 INFO Agent received command: run
+2025-04-02 19:51:10 INFO Agent starting run with config:
+	c_direction: 0.451490580257504
+	c_ee_to_obj: 1.0233598232988
+	c_obj_to_target: 0.07622484171547761
+	completion_reward: 4.883022350054487
+	model_lr: 3.995611050995735e-05
+	num_episodes_per_update: 6
+2025-04-02 19:51:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.451490580257504 --c_ee_to_obj=1.0233598232988 --c_obj_to_target=0.07622484171547761 --completion_reward=4.883022350054487 --model_lr=3.995611050995735e-05 --num_episodes_per_update=6
+2025-04-02 19:51:10 INFO Agent received command: run
+2025-04-02 19:51:10 INFO Agent starting run with config:
+	c_direction: 0.4707482405473955
+	c_ee_to_obj: 1.0790530696131992
+	c_obj_to_target: 0.4560920995794639
+	completion_reward: 6.438145236476613
+	model_lr: 2.721117601390431e-05
+	num_episodes_per_update: 8
+2025-04-02 19:51:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.4707482405473955 --c_ee_to_obj=1.0790530696131992 --c_obj_to_target=0.4560920995794639 --completion_reward=6.438145236476613 --model_lr=2.721117601390431e-05 --num_episodes_per_update=8
+2025-04-02 19:51:10 INFO Agent received command: run
+2025-04-02 19:51:10 INFO Agent starting run with config:
+	c_direction: 1.252707923569935
+	c_ee_to_obj: 0.9765744083337656
+	c_obj_to_target: 0.9847572219103552
+	completion_reward: 17.201610986861436
+	model_lr: 1.6925300941721058e-05
+	num_episodes_per_update: 4
+2025-04-02 19:51:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.252707923569935 --c_ee_to_obj=0.9765744083337656 --c_obj_to_target=0.9847572219103552 --completion_reward=17.201610986861436 --model_lr=1.6925300941721058e-05 --num_episodes_per_update=4
+2025-04-02 19:51:10 INFO Agent received command: run
+2025-04-02 19:51:11 INFO Agent starting run with config:
+	c_direction: 1.5350082665592797
+	c_ee_to_obj: 0.7245882388346283
+	c_obj_to_target: 0.16477736002063326
+	completion_reward: 8.963305935820625
+	model_lr: 0.00012162303013055904
+	num_episodes_per_update: 10
+2025-04-02 19:51:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.5350082665592797 --c_ee_to_obj=0.7245882388346283 --c_obj_to_target=0.16477736002063326 --completion_reward=8.963305935820625 --model_lr=0.00012162303013055904 --num_episodes_per_update=10
+2025-04-02 19:51:15 INFO Running runs: ['vvdxz1bn']
+2025-04-02 19:51:16 INFO Running runs: ['gkobdiru']
+2025-04-02 19:51:18 INFO Running runs: ['yo92q8gc']
+2025-04-02 19:51:16 INFO Running runs: ['2hxs1wyc']
+2025-04-02 19:51:16 INFO Running runs: ['y9hcqki5']
+2025-04-02 19:51:17 INFO Running runs: ['46pwr4qe']
+2025-04-02 19:51:16 INFO Running runs: ['wh8h2rli']
+2025-04-02 19:51:17 INFO Running runs: ['dnfw3yhn']
+2025-04-02 19:51:18 INFO Running runs: ['qr1vhlut']
+2025-04-02 19:51:17 INFO Running runs: ['6k9d0x8t']
+2025-04-02 19:56:15 INFO Cleaning up finished run: vvdxz1bn
+2025-04-02 19:56:15 INFO Cleaning up finished run: wh8h2rli
+2025-04-02 19:56:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:16 INFO Cleaning up finished run: 6k9d0x8t
+2025-04-02 19:56:16 INFO Cleaning up finished run: qr1vhlut
+2025-04-02 19:56:16 INFO Agent received command: run
+2025-04-02 19:56:16 INFO Agent starting run with config:
+	c_direction: 0.5681831985739147
+	c_ee_to_obj: 0.23853009645086945
+	c_obj_to_target: 0.3178501668330771
+	completion_reward: 6.698080546704404
+	model_lr: 6.442764872332827e-05
+	num_episodes_per_update: 1
+2025-04-02 19:56:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5681831985739147 --c_ee_to_obj=0.23853009645086945 --c_obj_to_target=0.3178501668330771 --completion_reward=6.698080546704404 --model_lr=6.442764872332827e-05 --num_episodes_per_update=1
+2025-04-02 19:56:16 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:16 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:16 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:16 INFO Cleaning up finished run: y9hcqki5
+2025-04-02 19:56:16 INFO Cleaning up finished run: gkobdiru
+2025-04-02 19:56:17 INFO Agent received command: run
+2025-04-02 19:56:17 INFO Agent starting run with config:
+	c_direction: 1.0685613039622468
+	c_ee_to_obj: 0.7167454274209974
+	c_obj_to_target: 0.8356251789911757
+	completion_reward: 8.280775757379883
+	model_lr: 3.5977324780325204e-05
+	num_episodes_per_update: 4
+2025-04-02 19:56:17 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.0685613039622468 --c_ee_to_obj=0.7167454274209974 --c_obj_to_target=0.8356251789911757 --completion_reward=8.280775757379883 --model_lr=3.5977324780325204e-05 --num_episodes_per_update=4
+2025-04-02 19:56:17 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:17 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:18 INFO Cleaning up finished run: 2hxs1wyc
+2025-04-02 19:56:19 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:20 INFO Cleaning up finished run: yo92q8gc
+2025-04-02 19:56:20 INFO Cleaning up finished run: dnfw3yhn
+2025-04-02 19:56:20 INFO Cleaning up finished run: 46pwr4qe
+2025-04-02 19:56:21 INFO Running runs: ['miba9we4']
+2025-04-02 19:56:21 INFO Cleaning up finished run: miba9we4
+2025-04-02 19:56:21 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:21 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:21 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 19:56:22 INFO Running runs: ['terfnvtd']
+2025-04-02 19:56:22 INFO Cleaning up finished run: terfnvtd
+2025-04-02 19:56:29 INFO Agent received command: run
+2025-04-02 19:56:29 INFO Agent starting run with config:
+	c_direction: 1.2957803312278608
+	c_ee_to_obj: 0.941970766754211
+	c_obj_to_target: 1.5099612985612323
+	completion_reward: 5.137605049253493
+	model_lr: 0.0004435375459151806
+	num_episodes_per_update: 1
+2025-04-02 19:56:29 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.2957803312278608 --c_ee_to_obj=0.941970766754211 --c_obj_to_target=1.5099612985612323 --completion_reward=5.137605049253493 --model_lr=0.0004435375459151806 --num_episodes_per_update=1
+2025-04-02 19:56:29 INFO Agent received command: run
+2025-04-02 19:56:29 INFO Agent starting run with config:
+	c_direction: 1.219903108122683
+	c_ee_to_obj: 1.9244558706704609
+	c_obj_to_target: 1.954000607078004
+	completion_reward: 18.08599230713518
+	model_lr: 2.06489364777422e-05
+	num_episodes_per_update: 4
+2025-04-02 19:56:29 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.219903108122683 --c_ee_to_obj=1.9244558706704609 --c_obj_to_target=1.954000607078004 --completion_reward=18.08599230713518 --model_lr=2.06489364777422e-05 --num_episodes_per_update=4
+2025-04-02 19:56:29 INFO Agent received command: run
+2025-04-02 19:56:29 INFO Agent starting run with config:
+	c_direction: 0.1862106785188604
+	c_ee_to_obj: 1.754663335086843
+	c_obj_to_target: 1.3768371893229006
+	completion_reward: 10.632562583416584
+	model_lr: 0.0001468745009675729
+	num_episodes_per_update: 6
+2025-04-02 19:56:29 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.1862106785188604 --c_ee_to_obj=1.754663335086843 --c_obj_to_target=1.3768371893229006 --completion_reward=10.632562583416584 --model_lr=0.0001468745009675729 --num_episodes_per_update=6
+2025-04-02 19:56:29 INFO Agent received command: run
+2025-04-02 19:56:29 INFO Agent starting run with config:
+	c_direction: 0.6598067125147671
+	c_ee_to_obj: 1.6292987753419617
+	c_obj_to_target: 0.20846909524823243
+	completion_reward: 13.299732884993926
+	model_lr: 8.640371841302966e-05
+	num_episodes_per_update: 1
+2025-04-02 19:56:29 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.6598067125147671 --c_ee_to_obj=1.6292987753419617 --c_obj_to_target=0.20846909524823243 --completion_reward=13.299732884993926 --model_lr=8.640371841302966e-05 --num_episodes_per_update=1
+2025-04-02 19:56:30 INFO Agent received command: run
+2025-04-02 19:56:30 INFO Agent starting run with config:
+	c_direction: 1.874698098003072
+	c_ee_to_obj: 1.8783955024591112
+	c_obj_to_target: 0.01173071082608268
+	completion_reward: 9.542444113972364
+	model_lr: 3.566355087090424e-05
+	num_episodes_per_update: 8
+2025-04-02 19:56:30 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.874698098003072 --c_ee_to_obj=1.8783955024591112 --c_obj_to_target=0.01173071082608268 --completion_reward=9.542444113972364 --model_lr=3.566355087090424e-05 --num_episodes_per_update=8
+2025-04-02 19:56:30 INFO Agent received command: run
+2025-04-02 19:56:30 INFO Agent starting run with config:
+	c_direction: 0.37216780215352774
+	c_ee_to_obj: 0.9548332273426654
+	c_obj_to_target: 0.5772818068352015
+	completion_reward: 19.943355588934164
+	model_lr: 1.6887801311753038e-05
+	num_episodes_per_update: 10
+2025-04-02 19:56:30 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.37216780215352774 --c_ee_to_obj=0.9548332273426654 --c_obj_to_target=0.5772818068352015 --completion_reward=19.943355588934164 --model_lr=1.6887801311753038e-05 --num_episodes_per_update=10
+2025-04-02 19:56:30 INFO Agent received command: run
+2025-04-02 19:56:30 INFO Agent starting run with config:
+	c_direction: 1.5973388365642875
+	c_ee_to_obj: 0.35993874132396697
+	c_obj_to_target: 1.3396910581150596
+	completion_reward: 15.067207623095186
+	model_lr: 0.0002620600437040324
+	num_episodes_per_update: 3
+2025-04-02 19:56:30 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.5973388365642875 --c_ee_to_obj=0.35993874132396697 --c_obj_to_target=1.3396910581150596 --completion_reward=15.067207623095186 --model_lr=0.0002620600437040324 --num_episodes_per_update=3
+2025-04-02 19:56:30 INFO Agent received command: run
+2025-04-02 19:56:30 INFO Agent starting run with config:
+	c_direction: 0.4144593781275794
+	c_ee_to_obj: 0.22839958564551277
+	c_obj_to_target: 1.520154298370846
+	completion_reward: 8.432382428079393
+	model_lr: 7.812624694629922e-05
+	num_episodes_per_update: 2
+2025-04-02 19:56:30 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.4144593781275794 --c_ee_to_obj=0.22839958564551277 --c_obj_to_target=1.520154298370846 --completion_reward=8.432382428079393 --model_lr=7.812624694629922e-05 --num_episodes_per_update=2
+2025-04-02 19:56:30 INFO Agent received command: run
+2025-04-02 19:56:30 INFO Agent starting run with config:
+	c_direction: 0.5524844285239712
+	c_ee_to_obj: 0.05670337548301774
+	c_obj_to_target: 1.15723268958324
+	completion_reward: 16.09463731518959
+	model_lr: 0.00042317791601933873
+	num_episodes_per_update: 4
+2025-04-02 19:56:30 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5524844285239712 --c_ee_to_obj=0.05670337548301774 --c_obj_to_target=1.15723268958324 --completion_reward=16.09463731518959 --model_lr=0.00042317791601933873 --num_episodes_per_update=4
+2025-04-02 19:56:31 INFO Agent received command: run
+2025-04-02 19:56:31 INFO Agent starting run with config:
+	c_direction: 0.17161229130910627
+	c_ee_to_obj: 0.6546349311495994
+	c_obj_to_target: 0.10191351256067228
+	completion_reward: 2.7879868598712165
+	model_lr: 6.893626172148624e-05
+	num_episodes_per_update: 4
+2025-04-02 19:56:31 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.17161229130910627 --c_ee_to_obj=0.6546349311495994 --c_obj_to_target=0.10191351256067228 --completion_reward=2.7879868598712165 --model_lr=6.893626172148624e-05 --num_episodes_per_update=4
+2025-04-02 19:56:34 INFO Running runs: ['g8ymh659']
+2025-04-02 19:56:34 INFO Cleaning up finished run: g8ymh659
+2025-04-02 19:56:34 INFO Running runs: ['y1gduzc9']
+2025-04-02 19:56:34 INFO Cleaning up finished run: y1gduzc9
+2025-04-02 19:56:34 INFO Running runs: ['fqjckcxu']
+2025-04-02 19:56:34 INFO Cleaning up finished run: fqjckcxu
+2025-04-02 19:56:34 INFO Agent received command: run
+2025-04-02 19:56:34 INFO Agent starting run with config:
+	c_direction: 0.22867256425815063
+	c_ee_to_obj: 0.5962741462402348
+	c_obj_to_target: 1.649977265560281
+	completion_reward: 16.943244552744623
+	model_lr: 5.748740218218349e-05
+	num_episodes_per_update: 1
+2025-04-02 19:56:34 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.22867256425815063 --c_ee_to_obj=0.5962741462402348 --c_obj_to_target=1.649977265560281 --completion_reward=16.943244552744623 --model_lr=5.748740218218349e-05 --num_episodes_per_update=1
+2025-04-02 19:56:34 INFO Running runs: ['7cpp0tx1']
+2025-04-02 19:56:34 INFO Cleaning up finished run: 7cpp0tx1
+2025-04-02 19:56:35 INFO Running runs: ['ihk6zrl5']
+2025-04-02 19:56:35 INFO Cleaning up finished run: ihk6zrl5
+2025-04-02 19:56:35 INFO Agent received command: run
+2025-04-02 19:56:35 INFO Agent starting run with config:
+	c_direction: 1.313595542643312
+	c_ee_to_obj: 0.11906373013428471
+	c_obj_to_target: 0.17865047890743524
+	completion_reward: 8.639537288786059
+	model_lr: 7.162284106584482e-05
+	num_episodes_per_update: 4
+2025-04-02 19:56:35 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.313595542643312 --c_ee_to_obj=0.11906373013428471 --c_obj_to_target=0.17865047890743524 --completion_reward=8.639537288786059 --model_lr=7.162284106584482e-05 --num_episodes_per_update=4
+2025-04-02 19:56:35 INFO Running runs: ['b902r9rv']
+2025-04-02 19:56:35 INFO Cleaning up finished run: b902r9rv
+2025-04-02 19:56:35 INFO Running runs: ['lmxw7xya']
+2025-04-02 19:56:35 INFO Cleaning up finished run: lmxw7xya
+2025-04-02 19:56:35 INFO Agent received command: run
+2025-04-02 19:56:35 INFO Agent starting run with config:
+	c_direction: 1.6080736952101038
+	c_ee_to_obj: 0.986991739560217
+	c_obj_to_target: 0.6759176299653535
+	completion_reward: 6.709859260709356
+	model_lr: 0.00010324352677377337
+	num_episodes_per_update: 4
+2025-04-02 19:56:35 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.6080736952101038 --c_ee_to_obj=0.986991739560217 --c_obj_to_target=0.6759176299653535 --completion_reward=6.709859260709356 --model_lr=0.00010324352677377337 --num_episodes_per_update=4
+2025-04-02 19:56:35 INFO Agent received command: run
+2025-04-02 19:56:35 INFO Agent starting run with config:
+	c_direction: 1.507810219391925
+	c_ee_to_obj: 0.7696979627630649
+	c_obj_to_target: 1.042153100194369
+	completion_reward: 10.074643355855706
+	model_lr: 0.00013711017485712609
+	num_episodes_per_update: 1
+2025-04-02 19:56:35 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.507810219391925 --c_ee_to_obj=0.7696979627630649 --c_obj_to_target=1.042153100194369 --completion_reward=10.074643355855706 --model_lr=0.00013711017485712609 --num_episodes_per_update=1
+2025-04-02 19:56:35 INFO Agent received command: run
+2025-04-02 19:56:35 INFO Agent starting run with config:
+	c_direction: 0.1611261010961711
+	c_ee_to_obj: 0.4508181449532005
+	c_obj_to_target: 0.6928996981976727
+	completion_reward: 7.892771779287058
+	model_lr: 1.626634408072519e-05
+	num_episodes_per_update: 1
+2025-04-02 19:56:35 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.1611261010961711 --c_ee_to_obj=0.4508181449532005 --c_obj_to_target=0.6928996981976727 --completion_reward=7.892771779287058 --model_lr=1.626634408072519e-05 --num_episodes_per_update=1
+2025-04-02 19:56:35 INFO Running runs: ['mv2mvpyh']
+2025-04-02 19:56:35 INFO Cleaning up finished run: mv2mvpyh
+2025-04-02 19:56:35 INFO Agent received command: run
+2025-04-02 19:56:35 INFO Agent starting run with config:
+	c_direction: 0.7841970743350353
+	c_ee_to_obj: 1.4581742704503526
+	c_obj_to_target: 1.8468623448558417
+	completion_reward: 14.746313030969144
+	model_lr: 0.0007865632879373158
+	num_episodes_per_update: 2
+2025-04-02 19:56:35 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7841970743350353 --c_ee_to_obj=1.4581742704503526 --c_obj_to_target=1.8468623448558417 --completion_reward=14.746313030969144 --model_lr=0.0007865632879373158 --num_episodes_per_update=2
+2025-04-02 19:56:35 INFO Running runs: ['op27jrsk']
+2025-04-02 19:56:35 INFO Cleaning up finished run: op27jrsk
+2025-04-02 19:56:35 INFO Agent received command: run
+2025-04-02 19:56:35 INFO Agent starting run with config:
+	c_direction: 1.3591365090272625
+	c_ee_to_obj: 1.6148482050280013
+	c_obj_to_target: 0.2703205248827929
+	completion_reward: 6.798939878271533
+	model_lr: 0.0008466045448791073
+	num_episodes_per_update: 10
+2025-04-02 19:56:35 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.3591365090272625 --c_ee_to_obj=1.6148482050280013 --c_obj_to_target=0.2703205248827929 --completion_reward=6.798939878271533 --model_lr=0.0008466045448791073 --num_episodes_per_update=10
+2025-04-02 19:56:36 INFO Running runs: ['3oqpkzjo']
+2025-04-02 19:56:36 INFO Cleaning up finished run: 3oqpkzjo
+2025-04-02 19:56:36 INFO Agent received command: run
+2025-04-02 19:56:36 INFO Agent starting run with config:
+	c_direction: 0.5655866452890936
+	c_ee_to_obj: 1.7059651429659315
+	c_obj_to_target: 1.8933693809691916
+	completion_reward: 0.06964167312253133
+	model_lr: 5.520817938796636e-05
+	num_episodes_per_update: 10
+2025-04-02 19:56:36 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5655866452890936 --c_ee_to_obj=1.7059651429659315 --c_obj_to_target=1.8933693809691916 --completion_reward=0.06964167312253133 --model_lr=5.520817938796636e-05 --num_episodes_per_update=10
+2025-04-02 19:56:36 INFO Agent received command: run
+2025-04-02 19:56:36 INFO Agent starting run with config:
+	c_direction: 0.8597132191828241
+	c_ee_to_obj: 0.3020963771370182
+	c_obj_to_target: 1.3460952925475935
+	completion_reward: 19.889828348794463
+	model_lr: 0.0006765161907904065
+	num_episodes_per_update: 6
+2025-04-02 19:56:36 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.8597132191828241 --c_ee_to_obj=0.3020963771370182 --c_obj_to_target=1.3460952925475935 --completion_reward=19.889828348794463 --model_lr=0.0006765161907904065 --num_episodes_per_update=6
+2025-04-02 19:56:36 INFO Agent received command: run
+2025-04-02 19:56:36 INFO Agent starting run with config:
+	c_direction: 0.845856891454154
+	c_ee_to_obj: 1.1262216335365065
+	c_obj_to_target: 0.048723258575392725
+	completion_reward: 0.7304153249070922
+	model_lr: 0.0006907604084599672
+	num_episodes_per_update: 1
+2025-04-02 19:56:36 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.845856891454154 --c_ee_to_obj=1.1262216335365065 --c_obj_to_target=0.048723258575392725 --completion_reward=0.7304153249070922 --model_lr=0.0006907604084599672 --num_episodes_per_update=1
+2025-04-02 19:56:39 INFO Running runs: ['p1cg073d']
+2025-04-02 19:56:39 INFO Cleaning up finished run: p1cg073d
+2025-04-02 19:56:40 INFO Running runs: ['f9r6e5n0']
+2025-04-02 19:56:40 INFO Cleaning up finished run: f9r6e5n0
+2025-04-02 19:56:40 INFO Agent received command: run
+2025-04-02 19:56:40 INFO Agent starting run with config:
+	c_direction: 0.058071562591548886
+	c_ee_to_obj: 1.22774765420984
+	c_obj_to_target: 0.6152854674027044
+	completion_reward: 10.600712648533497
+	model_lr: 7.498792314253544e-05
+	num_episodes_per_update: 3
+2025-04-02 19:56:40 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.058071562591548886 --c_ee_to_obj=1.22774765420984 --c_obj_to_target=0.6152854674027044 --completion_reward=10.600712648533497 --model_lr=7.498792314253544e-05 --num_episodes_per_update=3
+2025-04-02 19:56:40 INFO Running runs: ['watg74rs']
+2025-04-02 19:56:40 INFO Cleaning up finished run: watg74rs
+2025-04-02 19:56:40 INFO Running runs: ['13sb84eu']
+2025-04-02 19:56:40 INFO Cleaning up finished run: 13sb84eu
+2025-04-02 19:56:40 INFO Running runs: ['lcbn50vr']
+2025-04-02 19:56:40 INFO Cleaning up finished run: lcbn50vr
+2025-04-02 19:56:40 INFO Running runs: ['z16rg5e4']
+2025-04-02 19:56:40 INFO Cleaning up finished run: z16rg5e4
+2025-04-02 19:56:40 INFO Running runs: ['eb9lsldd']
+2025-04-02 19:56:40 INFO Cleaning up finished run: eb9lsldd
+2025-04-02 19:56:41 INFO Running runs: ['hykzf41g']
+2025-04-02 19:56:41 INFO Cleaning up finished run: hykzf41g
+2025-04-02 19:56:41 INFO Running runs: ['ixu8s12p']
+2025-04-02 19:56:41 INFO Cleaning up finished run: ixu8s12p
+2025-04-02 19:56:41 INFO Running runs: ['f8br9far']
+2025-04-02 19:56:41 INFO Cleaning up finished run: f8br9far
+2025-04-02 19:56:45 INFO Running runs: ['rzgci2cs']
+2025-04-02 19:56:45 INFO Cleaning up finished run: rzgci2cs
+2025-04-02 19:57:00 INFO Running runs: []
+2025-04-02 19:57:00 INFO Running runs: []
+2025-04-02 19:57:00 INFO Running runs: []
+2025-04-02 19:57:00 INFO Running runs: []
+2025-04-02 19:57:01 INFO Running runs: []
+2025-04-02 19:57:01 INFO Running runs: []
+2025-04-02 19:57:01 INFO Running runs: []
+2025-04-02 19:57:01 INFO Running runs: []
+2025-04-02 19:57:05 INFO Agent received command: run
+2025-04-02 19:57:05 INFO Agent starting run with config:
+	c_direction: 1.7250485085966971
+	c_ee_to_obj: 0.12052897498073434
+	c_obj_to_target: 0.9130286006215768
+	completion_reward: 11.603957963702214
+	model_lr: 2.0600239939163182e-05
+	num_episodes_per_update: 6
+2025-04-02 19:57:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.7250485085966971 --c_ee_to_obj=0.12052897498073434 --c_obj_to_target=0.9130286006215768 --completion_reward=11.603957963702214 --model_lr=2.0600239939163182e-05 --num_episodes_per_update=6
+2025-04-02 19:57:05 INFO Agent received command: run
+2025-04-02 19:57:05 INFO Agent starting run with config:
+	c_direction: 1.6352044486441182
+	c_ee_to_obj: 0.226525139871411
+	c_obj_to_target: 1.9580718063982512
+	completion_reward: 8.56433774934646
+	model_lr: 0.0003167685388272126
+	num_episodes_per_update: 3
+2025-04-02 19:57:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.6352044486441182 --c_ee_to_obj=0.226525139871411 --c_obj_to_target=1.9580718063982512 --completion_reward=8.56433774934646 --model_lr=0.0003167685388272126 --num_episodes_per_update=3
+2025-04-02 19:57:05 INFO Running runs: []
+2025-04-02 19:57:05 INFO Agent received command: run
+2025-04-02 19:57:05 INFO Agent starting run with config:
+	c_direction: 1.76818438095226
+	c_ee_to_obj: 1.4475036262643763
+	c_obj_to_target: 1.2220785499104716
+	completion_reward: 6.307444204410874
+	model_lr: 0.000542270145260483
+	num_episodes_per_update: 8
+2025-04-02 19:57:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.76818438095226 --c_ee_to_obj=1.4475036262643763 --c_obj_to_target=1.2220785499104716 --completion_reward=6.307444204410874 --model_lr=0.000542270145260483 --num_episodes_per_update=8
+2025-04-02 19:57:05 INFO Agent received command: run
+2025-04-02 19:57:05 INFO Agent starting run with config:
+	c_direction: 0.1800825352247022
+	c_ee_to_obj: 1.6319181488847772
+	c_obj_to_target: 0.448048909757804
+	completion_reward: 12.583365070834052
+	model_lr: 0.0004029706402189494
+	num_episodes_per_update: 1
+2025-04-02 19:57:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.1800825352247022 --c_ee_to_obj=1.6319181488847772 --c_obj_to_target=0.448048909757804 --completion_reward=12.583365070834052 --model_lr=0.0004029706402189494 --num_episodes_per_update=1
+2025-04-02 19:57:05 INFO Agent received command: run
+2025-04-02 19:57:05 INFO Agent starting run with config:
+	c_direction: 1.1596549521226696
+	c_ee_to_obj: 1.1457237460817802
+	c_obj_to_target: 0.2516190178456501
+	completion_reward: 18.03355834454428
+	model_lr: 0.00023383080667588985
+	num_episodes_per_update: 5
+2025-04-02 19:57:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.1596549521226696 --c_ee_to_obj=1.1457237460817802 --c_obj_to_target=0.2516190178456501 --completion_reward=18.03355834454428 --model_lr=0.00023383080667588985 --num_episodes_per_update=5
+2025-04-02 19:57:06 INFO Agent received command: run
+2025-04-02 19:57:06 INFO Agent starting run with config:
+	c_direction: 0.3223614451640737
+	c_ee_to_obj: 0.29201635728386877
+	c_obj_to_target: 0.3593231690673311
+	completion_reward: 3.0458634817799335
+	model_lr: 2.844216714983041e-05
+	num_episodes_per_update: 2
+2025-04-02 19:57:06 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.3223614451640737 --c_ee_to_obj=0.29201635728386877 --c_obj_to_target=0.3593231690673311 --completion_reward=3.0458634817799335 --model_lr=2.844216714983041e-05 --num_episodes_per_update=2
+2025-04-02 19:57:06 INFO Agent received command: run
+2025-04-02 19:57:06 INFO Agent starting run with config:
+	c_direction: 1.9294950839142464
+	c_ee_to_obj: 0.6074076802568207
+	c_obj_to_target: 0.5503773729196604
+	completion_reward: 0.8607537561522971
+	model_lr: 7.216318429639892e-05
+	num_episodes_per_update: 2
+2025-04-02 19:57:06 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.9294950839142464 --c_ee_to_obj=0.6074076802568207 --c_obj_to_target=0.5503773729196604 --completion_reward=0.8607537561522971 --model_lr=7.216318429639892e-05 --num_episodes_per_update=2
+2025-04-02 19:57:06 INFO Agent received command: run
+2025-04-02 19:57:06 INFO Agent starting run with config:
+	c_direction: 1.6239854586587767
+	c_ee_to_obj: 1.6880482828257364
+	c_obj_to_target: 0.20845718561220816
+	completion_reward: 0.4395628531379403
+	model_lr: 3.3432017608951225e-05
+	num_episodes_per_update: 2
+2025-04-02 19:57:06 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.6239854586587767 --c_ee_to_obj=1.6880482828257364 --c_obj_to_target=0.20845718561220816 --completion_reward=0.4395628531379403 --model_lr=3.3432017608951225e-05 --num_episodes_per_update=2
+2025-04-02 19:57:06 INFO Agent received command: run
+2025-04-02 19:57:06 INFO Agent starting run with config:
+	c_direction: 0.3532978775316611
+	c_ee_to_obj: 1.9596879486909915
+	c_obj_to_target: 1.9094298150351132
+	completion_reward: 19.036783301350862
+	model_lr: 9.19225179495504e-05
+	num_episodes_per_update: 1
+2025-04-02 19:57:06 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.3532978775316611 --c_ee_to_obj=1.9596879486909915 --c_obj_to_target=1.9094298150351132 --completion_reward=19.036783301350862 --model_lr=9.19225179495504e-05 --num_episodes_per_update=1
+2025-04-02 19:57:06 INFO Agent received command: run
+2025-04-02 19:57:06 INFO Agent starting run with config:
+	c_direction: 1.8932441737804455
+	c_ee_to_obj: 1.4774368444963712
+	c_obj_to_target: 1.5671217863084552
+	completion_reward: 7.795583229522014
+	model_lr: 0.000645214359981195
+	num_episodes_per_update: 8
+2025-04-02 19:57:06 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.8932441737804455 --c_ee_to_obj=1.4774368444963712 --c_obj_to_target=1.5671217863084552 --completion_reward=7.795583229522014 --model_lr=0.000645214359981195 --num_episodes_per_update=8
+2025-04-02 19:57:10 INFO Running runs: ['o6snrhc3']
+2025-04-02 19:57:10 INFO Cleaning up finished run: o6snrhc3
+2025-04-02 19:57:10 INFO Running runs: ['4ytfmisk']
+2025-04-02 19:57:10 INFO Cleaning up finished run: 4ytfmisk
+2025-04-02 19:57:10 INFO Agent received command: run
+2025-04-02 19:57:10 INFO Agent starting run with config:
+	c_direction: 1.680102605938957
+	c_ee_to_obj: 0.30509930275689445
+	c_obj_to_target: 0.9398316438181452
+	completion_reward: 1.0917833202226723
+	model_lr: 1.0827016418765703e-05
+	num_episodes_per_update: 5
+2025-04-02 19:57:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.680102605938957 --c_ee_to_obj=0.30509930275689445 --c_obj_to_target=0.9398316438181452 --completion_reward=1.0917833202226723 --model_lr=1.0827016418765703e-05 --num_episodes_per_update=5
+2025-04-02 19:57:10 INFO Running runs: ['dmdi9z3e']
+2025-04-02 19:57:10 INFO Cleaning up finished run: dmdi9z3e
+2025-04-02 19:57:10 INFO Running runs: ['wq36ljyk']
+2025-04-02 19:57:10 INFO Cleaning up finished run: wq36ljyk
+2025-04-02 19:57:10 INFO Running runs: ['jlzeqkp6']
+2025-04-02 19:57:10 INFO Cleaning up finished run: jlzeqkp6
+2025-04-02 19:57:10 INFO Agent received command: run
+2025-04-02 19:57:10 INFO Agent starting run with config:
+	c_direction: 0.7387421702063537
+	c_ee_to_obj: 1.7139767674088795
+	c_obj_to_target: 1.7327391632163751
+	completion_reward: 11.004765624189616
+	model_lr: 1.2150446285676756e-05
+	num_episodes_per_update: 3
+2025-04-02 19:57:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7387421702063537 --c_ee_to_obj=1.7139767674088795 --c_obj_to_target=1.7327391632163751 --completion_reward=11.004765624189616 --model_lr=1.2150446285676756e-05 --num_episodes_per_update=3
+2025-04-02 19:57:11 INFO Agent received command: run
+2025-04-02 19:57:11 INFO Agent starting run with config:
+	c_direction: 0.5210207905625674
+	c_ee_to_obj: 0.48968827008181526
+	c_obj_to_target: 1.8435299983447613
+	completion_reward: 16.54295798908835
+	model_lr: 5.1353889761831576e-05
+	num_episodes_per_update: 2
+2025-04-02 19:57:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5210207905625674 --c_ee_to_obj=0.48968827008181526 --c_obj_to_target=1.8435299983447613 --completion_reward=16.54295798908835 --model_lr=5.1353889761831576e-05 --num_episodes_per_update=2
+2025-04-02 19:57:11 INFO Running runs: ['71lakgxm']
+2025-04-02 19:57:11 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:11 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:11 INFO Agent received command: run
+2025-04-02 19:57:11 INFO Agent starting run with config:
+	c_direction: 0.3311166421957874
+	c_ee_to_obj: 0.43442103015935385
+	c_obj_to_target: 1.386416279129291
+	completion_reward: 6.3822110826415095
+	model_lr: 2.041381974696201e-05
+	num_episodes_per_update: 6
+2025-04-02 19:57:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.3311166421957874 --c_ee_to_obj=0.43442103015935385 --c_obj_to_target=1.386416279129291 --completion_reward=6.3822110826415095 --model_lr=2.041381974696201e-05 --num_episodes_per_update=6
+2025-04-02 19:57:11 INFO Running runs: ['hvh5gt16']
+2025-04-02 19:57:11 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:11 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:11 INFO Agent received command: run
+2025-04-02 19:57:11 INFO Agent starting run with config:
+	c_direction: 1.7179295117756728
+	c_ee_to_obj: 1.6705994442234535
+	c_obj_to_target: 1.6463762303449394
+	completion_reward: 4.037256732857477
+	model_lr: 6.400633052877889e-05
+	num_episodes_per_update: 8
+2025-04-02 19:57:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.7179295117756728 --c_ee_to_obj=1.6705994442234535 --c_obj_to_target=1.6463762303449394 --completion_reward=4.037256732857477 --model_lr=6.400633052877889e-05 --num_episodes_per_update=8
+2025-04-02 19:57:11 INFO Running runs: ['75duvvxs']
+2025-04-02 19:57:11 INFO Cleaning up finished run: 75duvvxs
+2025-04-02 19:57:11 INFO Running runs: ['162hjre5']
+2025-04-02 19:57:11 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:11 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:11 INFO Running runs: ['e43obkt6']
+2025-04-02 19:57:11 INFO Cleaning up finished run: e43obkt6
+2025-04-02 19:57:11 INFO Agent received command: run
+2025-04-02 19:57:11 INFO Agent starting run with config:
+	c_direction: 0.3800395889870114
+	c_ee_to_obj: 0.4650658438157478
+	c_obj_to_target: 1.6330496264737375
+	completion_reward: 1.637900834445909
+	model_lr: 0.00012157698875489876
+	num_episodes_per_update: 5
+2025-04-02 19:57:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.3800395889870114 --c_ee_to_obj=0.4650658438157478 --c_obj_to_target=1.6330496264737375 --completion_reward=1.637900834445909 --model_lr=0.00012157698875489876 --num_episodes_per_update=5
+2025-04-02 19:57:12 INFO Agent received command: run
+2025-04-02 19:57:12 INFO Agent starting run with config:
+	c_direction: 1.7947386802406655
+	c_ee_to_obj: 0.812444902831083
+	c_obj_to_target: 0.21910713375769597
+	completion_reward: 13.590837170502352
+	model_lr: 4.2937685512210946e-05
+	num_episodes_per_update: 8
+2025-04-02 19:57:12 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.7947386802406655 --c_ee_to_obj=0.812444902831083 --c_obj_to_target=0.21910713375769597 --completion_reward=13.590837170502352 --model_lr=4.2937685512210946e-05 --num_episodes_per_update=8
+2025-04-02 19:57:15 INFO Running runs: ['ybxyn5g4']
+2025-04-02 19:57:15 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:15 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:15 INFO Running runs: ['r2eyo0gx']
+2025-04-02 19:57:15 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:15 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:16 INFO Running runs: ['8fj3mi9m']
+2025-04-02 19:57:16 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:16 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:16 INFO Running runs: ['enf0or3f']
+2025-04-02 19:57:16 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:16 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:16 INFO Running runs: ['q0ang1jc']
+2025-04-02 19:57:16 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:16 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:16 INFO Running runs: ['cow9blth']
+2025-04-02 19:57:16 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:16 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 19:57:17 INFO Running runs: ['6vvw5rb2']
+2025-04-02 19:57:17 ERROR Detected 5 failed runs in a row, shutting down.
+2025-04-02 19:57:17 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Running runs: []
+2025-04-02 20:16:46 INFO Agent received command: run
+2025-04-02 20:16:46 INFO Agent starting run with config:
+	c_direction: 0.1541286677316882
+	c_ee_to_obj: 1.5794133890724902
+	c_obj_to_target: 0.5067696116196054
+	completion_reward: 9.538323809171043
+	model_lr: 0.0006209623719970124
+	num_episodes_per_update: 5
+2025-04-02 20:16:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.1541286677316882 --c_ee_to_obj=1.5794133890724902 --c_obj_to_target=0.5067696116196054 --completion_reward=9.538323809171043 --model_lr=0.0006209623719970124 --num_episodes_per_update=5
+2025-04-02 20:16:47 INFO Agent received command: run
+2025-04-02 20:16:47 INFO Agent starting run with config:
+	c_direction: 1.4767836010135904
+	c_ee_to_obj: 1.32578952797357
+	c_obj_to_target: 0.9580977212634564
+	completion_reward: 4.81947615292863
+	model_lr: 1.6145409515582224e-05
+	num_episodes_per_update: 3
+2025-04-02 20:16:47 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.4767836010135904 --c_ee_to_obj=1.32578952797357 --c_obj_to_target=0.9580977212634564 --completion_reward=4.81947615292863 --model_lr=1.6145409515582224e-05 --num_episodes_per_update=3
+2025-04-02 20:16:47 INFO Agent received command: run
+2025-04-02 20:16:47 INFO Agent starting run with config:
+	c_direction: 1.9449877337917971
+	c_ee_to_obj: 1.4531277295011842
+	c_obj_to_target: 1.1734070104285854
+	completion_reward: 2.157543323853519
+	model_lr: 0.00010288183754708956
+	num_episodes_per_update: 2
+2025-04-02 20:16:47 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.9449877337917971 --c_ee_to_obj=1.4531277295011842 --c_obj_to_target=1.1734070104285854 --completion_reward=2.157543323853519 --model_lr=0.00010288183754708956 --num_episodes_per_update=2
+2025-04-02 20:16:48 INFO Agent received command: run
+2025-04-02 20:16:48 INFO Agent starting run with config:
+	c_direction: 0.5563100150904032
+	c_ee_to_obj: 1.338347806286953
+	c_obj_to_target: 0.4610246174658083
+	completion_reward: 19.993236315394174
+	model_lr: 2.824556570869638e-05
+	num_episodes_per_update: 1
+2025-04-02 20:16:48 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5563100150904032 --c_ee_to_obj=1.338347806286953 --c_obj_to_target=0.4610246174658083 --completion_reward=19.993236315394174 --model_lr=2.824556570869638e-05 --num_episodes_per_update=1
+2025-04-02 20:16:48 INFO Agent received command: run
+2025-04-02 20:16:48 INFO Agent starting run with config:
+	c_direction: 1.5175080712280016
+	c_ee_to_obj: 0.05265348712059725
+	c_obj_to_target: 0.16645412913735624
+	completion_reward: 1.8220909407865649
+	model_lr: 7.793669122976353e-05
+	num_episodes_per_update: 3
+2025-04-02 20:16:48 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.5175080712280016 --c_ee_to_obj=0.05265348712059725 --c_obj_to_target=0.16645412913735624 --completion_reward=1.8220909407865649 --model_lr=7.793669122976353e-05 --num_episodes_per_update=3
+2025-04-02 20:16:48 INFO Agent received command: run
+2025-04-02 20:16:48 INFO Agent starting run with config:
+	c_direction: 1.8939106475805645
+	c_ee_to_obj: 1.7785302726210488
+	c_obj_to_target: 0.1651241972031119
+	completion_reward: 16.39960590043675
+	model_lr: 0.0003935781236075353
+	num_episodes_per_update: 10
+2025-04-02 20:16:48 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.8939106475805645 --c_ee_to_obj=1.7785302726210488 --c_obj_to_target=0.1651241972031119 --completion_reward=16.39960590043675 --model_lr=0.0003935781236075353 --num_episodes_per_update=10
+2025-04-02 20:16:49 INFO Agent received command: run
+2025-04-02 20:16:49 INFO Agent starting run with config:
+	c_direction: 0.06033882111922062
+	c_ee_to_obj: 0.1013778204918998
+	c_obj_to_target: 0.7316556823032765
+	completion_reward: 12.971915249783626
+	model_lr: 6.59697701641383e-05
+	num_episodes_per_update: 4
+2025-04-02 20:16:49 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.06033882111922062 --c_ee_to_obj=0.1013778204918998 --c_obj_to_target=0.7316556823032765 --completion_reward=12.971915249783626 --model_lr=6.59697701641383e-05 --num_episodes_per_update=4
+2025-04-02 20:16:49 INFO Agent received command: run
+2025-04-02 20:16:49 INFO Agent starting run with config:
+	c_direction: 0.8174369275112958
+	c_ee_to_obj: 1.0043235766240104
+	c_obj_to_target: 0.049387133680339534
+	completion_reward: 5.356194603853178
+	model_lr: 4.016127639695496e-05
+	num_episodes_per_update: 5
+2025-04-02 20:16:49 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.8174369275112958 --c_ee_to_obj=1.0043235766240104 --c_obj_to_target=0.049387133680339534 --completion_reward=5.356194603853178 --model_lr=4.016127639695496e-05 --num_episodes_per_update=5
+2025-04-02 20:16:49 INFO Agent received command: run
+2025-04-02 20:16:49 INFO Agent starting run with config:
+	c_direction: 0.725413741288484
+	c_ee_to_obj: 1.763473946179286
+	c_obj_to_target: 0.4406435322874991
+	completion_reward: 8.125602807365517
+	model_lr: 0.00029437736345829034
+	num_episodes_per_update: 8
+2025-04-02 20:16:49 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.725413741288484 --c_ee_to_obj=1.763473946179286 --c_obj_to_target=0.4406435322874991 --completion_reward=8.125602807365517 --model_lr=0.00029437736345829034 --num_episodes_per_update=8
+2025-04-02 20:16:49 INFO Agent received command: run
+2025-04-02 20:16:49 INFO Agent starting run with config:
+	c_direction: 0.5210393566250693
+	c_ee_to_obj: 0.8675121310874319
+	c_obj_to_target: 1.9945094339694551
+	completion_reward: 1.1485671832254796
+	model_lr: 0.0005554004198479766
+	num_episodes_per_update: 3
+2025-04-02 20:16:49 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5210393566250693 --c_ee_to_obj=0.8675121310874319 --c_obj_to_target=1.9945094339694551 --completion_reward=1.1485671832254796 --model_lr=0.0005554004198479766 --num_episodes_per_update=3
+2025-04-02 20:16:51 INFO Running runs: ['9rxlt6my']
+2025-04-02 20:16:52 INFO Running runs: ['utyunajv']
+2025-04-02 20:16:52 INFO Running runs: ['fgwcsnv1']
+2025-04-02 20:16:53 INFO Running runs: ['aiiqtn96']
+2025-04-02 20:16:53 INFO Running runs: ['fl4v3562']
+2025-04-02 20:16:56 INFO Running runs: ['62wrpd9i']
+2025-04-02 20:16:56 INFO Running runs: ['bhj7xyad']
+2025-04-02 20:16:55 INFO Running runs: ['xzd9eoni']
+2025-04-02 20:16:55 INFO Running runs: ['i225oqr9']
+2025-04-02 20:16:54 INFO Running runs: ['jvs690el']
+2025-04-02 22:18:38 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:14 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:15 ERROR Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+ValueError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 104, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/cli/cli.py", line 1676, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 567, in agent
+    return run_agent(
+        sweep_id,
+    ...<4 lines>...
+        count=count,
+    )
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 526, in run_agent
+    agent.run()
+    ~~~~~~~~~^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/wandb_agent.py", line 193, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/internal.py", line 134, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 79, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/apis/normalize.py", line 25, in wrapper
+    return func(*args, **kwargs)
+  File "/home/toprak/miniforge3/envs/cmpe591/lib/python3.13/site-packages/wandb/sdk/internal/internal_api.py", line 1139, in sweep
+    raise ValueError(f"Sweep {entity}/{project}/{sweep} not found")
+wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse not found
+
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:15 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:19:51 INFO Closing mailbox, abandoning 0 handles.
+2025-04-02 22:20:07 INFO Running runs: []
+2025-04-02 22:20:07 INFO Running runs: []
+2025-04-02 22:20:07 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Running runs: []
+2025-04-02 22:20:08 INFO Agent received command: run
+2025-04-02 22:20:08 INFO Agent starting run with config:
+	c_direction: 0.7979455289978716
+	c_ee_to_obj: 0.5789856119327035
+	c_obj_to_target: 1.4761786236181809
+	completion_reward: 0.7051970147086117
+	model_lr: 0.0005812491066370593
+	num_episodes_per_update: 1
+2025-04-02 22:20:08 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7979455289978716 --c_ee_to_obj=0.5789856119327035 --c_obj_to_target=1.4761786236181809 --completion_reward=0.7051970147086117 --model_lr=0.0005812491066370593 --num_episodes_per_update=1
+2025-04-02 22:20:08 INFO Agent received command: run
+2025-04-02 22:20:08 INFO Agent starting run with config:
+	c_direction: 0.22551692722802288
+	c_ee_to_obj: 1.577356263596459
+	c_obj_to_target: 0.9816720448951484
+	completion_reward: 13.75154560828426
+	model_lr: 1.689312186602413e-05
+	num_episodes_per_update: 5
+2025-04-02 22:20:08 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.22551692722802288 --c_ee_to_obj=1.577356263596459 --c_obj_to_target=0.9816720448951484 --completion_reward=13.75154560828426 --model_lr=1.689312186602413e-05 --num_episodes_per_update=5
+2025-04-02 22:20:08 INFO Agent received command: run
+2025-04-02 22:20:08 INFO Agent starting run with config:
+	c_direction: 1.125776634122036
+	c_ee_to_obj: 0.3147173820796212
+	c_obj_to_target: 0.40660127554233094
+	completion_reward: 0.9979982013503652
+	model_lr: 0.000674565020705866
+	num_episodes_per_update: 3
+2025-04-02 22:20:08 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.125776634122036 --c_ee_to_obj=0.3147173820796212 --c_obj_to_target=0.40660127554233094 --completion_reward=0.9979982013503652 --model_lr=0.000674565020705866 --num_episodes_per_update=3
+2025-04-02 22:20:08 INFO Agent received command: run
+2025-04-02 22:20:08 INFO Agent starting run with config:
+	c_direction: 0.2942491432351724
+	c_ee_to_obj: 1.1524363435951808
+	c_obj_to_target: 0.32009593106673906
+	completion_reward: 7.336411926845647
+	model_lr: 0.0004484715851221834
+	num_episodes_per_update: 5
+2025-04-02 22:20:08 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.2942491432351724 --c_ee_to_obj=1.1524363435951808 --c_obj_to_target=0.32009593106673906 --completion_reward=7.336411926845647 --model_lr=0.0004484715851221834 --num_episodes_per_update=5
+2025-04-02 22:20:08 INFO Agent received command: run
+2025-04-02 22:20:08 INFO Agent starting run with config:
+	c_direction: 1.2913247394191811
+	c_ee_to_obj: 0.876936007078225
+	c_obj_to_target: 0.274029534530823
+	completion_reward: 17.403187309935994
+	model_lr: 0.00042791618350608416
+	num_episodes_per_update: 2
+2025-04-02 22:20:08 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.2913247394191811 --c_ee_to_obj=0.876936007078225 --c_obj_to_target=0.274029534530823 --completion_reward=17.403187309935994 --model_lr=0.00042791618350608416 --num_episodes_per_update=2
+2025-04-02 22:20:09 INFO Agent received command: run
+2025-04-02 22:20:09 INFO Agent starting run with config:
+	c_direction: 0.6154582846593208
+	c_ee_to_obj: 0.737941704022488
+	c_obj_to_target: 1.307505845281127
+	completion_reward: 10.39173695457774
+	model_lr: 1.495442422935133e-05
+	num_episodes_per_update: 2
+2025-04-02 22:20:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.6154582846593208 --c_ee_to_obj=0.737941704022488 --c_obj_to_target=1.307505845281127 --completion_reward=10.39173695457774 --model_lr=1.495442422935133e-05 --num_episodes_per_update=2
+2025-04-02 22:20:09 INFO Agent received command: run
+2025-04-02 22:20:09 INFO Agent starting run with config:
+	c_direction: 0.7681300434082179
+	c_ee_to_obj: 0.2912918350714191
+	c_obj_to_target: 1.668264713485235
+	completion_reward: 11.766396768385563
+	model_lr: 0.00011450179201903948
+	num_episodes_per_update: 3
+2025-04-02 22:20:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7681300434082179 --c_ee_to_obj=0.2912918350714191 --c_obj_to_target=1.668264713485235 --completion_reward=11.766396768385563 --model_lr=0.00011450179201903948 --num_episodes_per_update=3
+2025-04-02 22:20:09 INFO Agent received command: run
+2025-04-02 22:20:09 INFO Agent starting run with config:
+	c_direction: 1.099526789346718
+	c_ee_to_obj: 0.04821960108616574
+	c_obj_to_target: 1.6077156769572452
+	completion_reward: 0.6094984468023701
+	model_lr: 1.1771244694253254e-05
+	num_episodes_per_update: 4
+2025-04-02 22:20:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.099526789346718 --c_ee_to_obj=0.04821960108616574 --c_obj_to_target=1.6077156769572452 --completion_reward=0.6094984468023701 --model_lr=1.1771244694253254e-05 --num_episodes_per_update=4
+2025-04-02 22:20:09 INFO Agent received command: run
+2025-04-02 22:20:09 INFO Agent starting run with config:
+	c_direction: 1.7770245445939117
+	c_ee_to_obj: 0.9753607128278664
+	c_obj_to_target: 1.5632115137815372
+	completion_reward: 3.293498054217483
+	model_lr: 1.411560870490551e-05
+	num_episodes_per_update: 8
+2025-04-02 22:20:09 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.7770245445939117 --c_ee_to_obj=0.9753607128278664 --c_obj_to_target=1.5632115137815372 --completion_reward=3.293498054217483 --model_lr=1.411560870490551e-05 --num_episodes_per_update=8
+2025-04-02 22:20:13 INFO Running runs: ['73wg6jny']
+2025-04-02 22:20:13 INFO Running runs: ['zy4gw5fr']
+2025-04-02 22:20:13 INFO Running runs: ['h22qcq2u']
+2025-04-02 22:20:13 INFO Running runs: ['fe96tnsa']
+2025-04-02 22:20:13 INFO Running runs: ['onqz37ix']
+2025-04-02 22:20:14 INFO Running runs: ['ub4p3sqy']
+2025-04-02 22:20:14 INFO Running runs: ['5s8cqdo1']
+2025-04-02 22:20:14 INFO Running runs: ['h7sd36vt']
+2025-04-02 22:20:14 INFO Running runs: ['hwvxc9wg']
+2025-04-02 22:20:44 INFO Agent received command: run
+2025-04-02 22:20:44 INFO Agent starting run with config:
+	c_direction: 0.29573784380508905
+	c_ee_to_obj: 0.5214275076990897
+	c_obj_to_target: 1.805259050006602
+	completion_reward: 3.8215279365569543
+	model_lr: 0.00011428031558119744
+	num_episodes_per_update: 10
+2025-04-02 22:20:44 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.29573784380508905 --c_ee_to_obj=0.5214275076990897 --c_obj_to_target=1.805259050006602 --completion_reward=3.8215279365569543 --model_lr=0.00011428031558119744 --num_episodes_per_update=10
+2025-04-02 22:20:49 INFO Running runs: ['6kuukect']

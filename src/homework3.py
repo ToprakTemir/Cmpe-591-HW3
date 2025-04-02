@@ -232,7 +232,7 @@ def reinforce_main(
         episode_rewards_file.write(f"{cumulative_reward}\n")
         episode_rewards_file.flush()
         data_collect_end_time = time.time()
-        print(f"Episode {i} collected in {data_collect_end_time - start_time} seconds, reward={cumulative_reward}, flush=True")
+        print(f"Episode {i} collected in {data_collect_end_time - start_time} seconds, reward={cumulative_reward}", flush=True)
 
         agent.update_model()
         agent.save_model(model_save_path)

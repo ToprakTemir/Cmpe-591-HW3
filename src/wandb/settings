@@ -1,0 +1,5 @@
+[default]
+entity = topraktemir_team
+project = Cmpe-591-HW3-src
+base_url = https://api.wandb.ai
+

@@ -1,8 +1,8 @@
 import subprocess
 import os
 
-SWEEP_ID = "topraktemir-/Cmpe-591-HW3-src/152rl4z8"
-NUM_AGENTS = 20
+SWEEP_ID = "topraktemir_team/Cmpe-591-HW3-src/63eymr2h"
+NUM_AGENTS = 10
 
 processes = []
 
