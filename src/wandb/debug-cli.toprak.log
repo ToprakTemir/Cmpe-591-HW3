@@ -3094,3 +3094,483 @@ wandb.errors.errors.CommError: Sweep topraktemir_team/Cmpe-591-HW3-src/xxfe5gse 
 	num_episodes_per_update: 10
 2025-04-02 22:20:44 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.29573784380508905 --c_ee_to_obj=0.5214275076990897 --c_obj_to_target=1.805259050006602 --completion_reward=3.8215279365569543 --model_lr=0.00011428031558119744 --num_episodes_per_update=10
 2025-04-02 22:20:49 INFO Running runs: ['6kuukect']
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Running runs: []
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 1.8259556349593689
+	c_ee_to_obj: 0.7683098798727737
+	c_obj_to_target: 0.05420673820951061
+	completion_reward: 7.971607746415559
+	model_lr: 4.243619348965752e-05
+	num_episodes_per_update: 6
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.8259556349593689 --c_ee_to_obj=0.7683098798727737 --c_obj_to_target=0.05420673820951061 --completion_reward=7.971607746415559 --model_lr=4.243619348965752e-05 --num_episodes_per_update=6
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 0.08232894169150429
+	c_ee_to_obj: 1.792099440313825
+	c_obj_to_target: 1.3381378010986271
+	completion_reward: 9.833869537401275
+	model_lr: 0.0007436007034850081
+	num_episodes_per_update: 1
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.08232894169150429 --c_ee_to_obj=1.792099440313825 --c_obj_to_target=1.3381378010986271 --completion_reward=9.833869537401275 --model_lr=0.0007436007034850081 --num_episodes_per_update=1
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 0.7809780934356805
+	c_ee_to_obj: 0.4507424757953993
+	c_obj_to_target: 0.011522034309098704
+	completion_reward: 14.158128207926476
+	model_lr: 1.3807925142475318e-05
+	num_episodes_per_update: 1
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7809780934356805 --c_ee_to_obj=0.4507424757953993 --c_obj_to_target=0.011522034309098704 --completion_reward=14.158128207926476 --model_lr=1.3807925142475318e-05 --num_episodes_per_update=1
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 0.7409228451353238
+	c_ee_to_obj: 1.9335729897825855
+	c_obj_to_target: 0.10627005540912826
+	completion_reward: 0.057098851956061125
+	model_lr: 0.00030185152049270076
+	num_episodes_per_update: 10
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7409228451353238 --c_ee_to_obj=1.9335729897825855 --c_obj_to_target=0.10627005540912826 --completion_reward=0.057098851956061125 --model_lr=0.00030185152049270076 --num_episodes_per_update=10
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 0.6350361634457988
+	c_ee_to_obj: 0.9438676825646796
+	c_obj_to_target: 0.8916013421869728
+	completion_reward: 10.0205966736178
+	model_lr: 0.00020684317153709975
+	num_episodes_per_update: 3
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.6350361634457988 --c_ee_to_obj=0.9438676825646796 --c_obj_to_target=0.8916013421869728 --completion_reward=10.0205966736178 --model_lr=0.00020684317153709975 --num_episodes_per_update=3
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 1.135101939416692
+	c_ee_to_obj: 1.9904030948960565
+	c_obj_to_target: 1.7685092897626424
+	completion_reward: 11.197874477167474
+	model_lr: 2.4843530601488015e-05
+	num_episodes_per_update: 5
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.135101939416692 --c_ee_to_obj=1.9904030948960565 --c_obj_to_target=1.7685092897626424 --completion_reward=11.197874477167474 --model_lr=2.4843530601488015e-05 --num_episodes_per_update=5
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 0.7770588924171427
+	c_ee_to_obj: 1.3360139510843227
+	c_obj_to_target: 1.4156985221393117
+	completion_reward: 1.715619278834568
+	model_lr: 0.0002492363904204714
+	num_episodes_per_update: 1
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7770588924171427 --c_ee_to_obj=1.3360139510843227 --c_obj_to_target=1.4156985221393117 --completion_reward=1.715619278834568 --model_lr=0.0002492363904204714 --num_episodes_per_update=1
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 1.5381254096359134
+	c_ee_to_obj: 0.4507969605143858
+	c_obj_to_target: 0.12534873664332813
+	completion_reward: 11.687737301419482
+	model_lr: 3.113970451326344e-05
+	num_episodes_per_update: 3
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.5381254096359134 --c_ee_to_obj=0.4507969605143858 --c_obj_to_target=0.12534873664332813 --completion_reward=11.687737301419482 --model_lr=3.113970451326344e-05 --num_episodes_per_update=3
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 1.4713451236343864
+	c_ee_to_obj: 0.8576883435161986
+	c_obj_to_target: 1.1197142021589623
+	completion_reward: 9.937486958536647
+	model_lr: 0.00016925590202544231
+	num_episodes_per_update: 2
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.4713451236343864 --c_ee_to_obj=0.8576883435161986 --c_obj_to_target=1.1197142021589623 --completion_reward=9.937486958536647 --model_lr=0.00016925590202544231 --num_episodes_per_update=2
+2025-04-03 18:27:05 INFO Agent received command: run
+2025-04-03 18:27:05 INFO Agent starting run with config:
+	c_direction: 0.8977507392298845
+	c_ee_to_obj: 0.13426835131340553
+	c_obj_to_target: 0.7411640785382623
+	completion_reward: 17.089806902261678
+	model_lr: 0.00010961473181174138
+	num_episodes_per_update: 2
+2025-04-03 18:27:05 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.8977507392298845 --c_ee_to_obj=0.13426835131340553 --c_obj_to_target=0.7411640785382623 --completion_reward=17.089806902261678 --model_lr=0.00010961473181174138 --num_episodes_per_update=2
+2025-04-03 18:27:10 INFO Running runs: ['x4ojx2d4']
+2025-04-03 18:27:10 INFO Cleaning up finished run: x4ojx2d4
+2025-04-03 18:27:10 INFO Running runs: ['x0eme5v7']
+2025-04-03 18:27:10 INFO Cleaning up finished run: x0eme5v7
+2025-04-03 18:27:10 INFO Running runs: ['8cr52y80']
+2025-04-03 18:27:10 INFO Cleaning up finished run: 8cr52y80
+2025-04-03 18:27:10 INFO Running runs: ['3drdljlm']
+2025-04-03 18:27:10 INFO Cleaning up finished run: 3drdljlm
+2025-04-03 18:27:10 INFO Running runs: ['10p2xjea']
+2025-04-03 18:27:10 INFO Cleaning up finished run: 10p2xjea
+2025-04-03 18:27:10 INFO Running runs: ['345816ju']
+2025-04-03 18:27:10 INFO Cleaning up finished run: 345816ju
+2025-04-03 18:27:10 INFO Running runs: ['rfkjr7zh']
+2025-04-03 18:27:10 INFO Cleaning up finished run: rfkjr7zh
+2025-04-03 18:27:10 INFO Running runs: ['3abh9rqa']
+2025-04-03 18:27:10 INFO Cleaning up finished run: 3abh9rqa
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Running runs: ['e1banit0']
+2025-04-03 18:27:10 INFO Cleaning up finished run: e1banit0
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:10 INFO Running runs: ['l29w474o']
+2025-04-03 18:27:10 INFO Cleaning up finished run: l29w474o
+2025-04-03 18:27:10 INFO Agent received command: run
+2025-04-03 18:27:10 INFO Agent starting run with config:
+	c_direction: 1.6428050166932415
+	c_ee_to_obj: 0.1066490582833468
+	c_obj_to_target: 1.3839586610865915
+	completion_reward: 19.812846517330737
+	model_lr: 9.23030750014442e-05
+	num_episodes_per_update: 1
+2025-04-03 18:27:10 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.6428050166932415 --c_ee_to_obj=0.1066490582833468 --c_obj_to_target=1.3839586610865915 --completion_reward=19.812846517330737 --model_lr=9.23030750014442e-05 --num_episodes_per_update=1
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 0.5009193602799533
+	c_ee_to_obj: 1.5511357619940325
+	c_obj_to_target: 0.016895998405432655
+	completion_reward: 7.296469604464814
+	model_lr: 3.547648046773341e-05
+	num_episodes_per_update: 2
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.5009193602799533 --c_ee_to_obj=1.5511357619940325 --c_obj_to_target=0.016895998405432655 --completion_reward=7.296469604464814 --model_lr=3.547648046773341e-05 --num_episodes_per_update=2
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 0.07159422983316799
+	c_ee_to_obj: 1.3226470212509551
+	c_obj_to_target: 1.2131069206487146
+	completion_reward: 15.54293843223642
+	model_lr: 4.442257753371302e-05
+	num_episodes_per_update: 1
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.07159422983316799 --c_ee_to_obj=1.3226470212509551 --c_obj_to_target=1.2131069206487146 --completion_reward=15.54293843223642 --model_lr=4.442257753371302e-05 --num_episodes_per_update=1
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 1.329346677119968
+	c_ee_to_obj: 1.0500795401286829
+	c_obj_to_target: 1.6786170759684491
+	completion_reward: 13.376090932007278
+	model_lr: 0.0002894488625647843
+	num_episodes_per_update: 8
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.329346677119968 --c_ee_to_obj=1.0500795401286829 --c_obj_to_target=1.6786170759684491 --completion_reward=13.376090932007278 --model_lr=0.0002894488625647843 --num_episodes_per_update=8
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 1.6203327753481411
+	c_ee_to_obj: 0.5428545404399348
+	c_obj_to_target: 0.628533647316458
+	completion_reward: 10.108890171956164
+	model_lr: 9.173714071647542e-05
+	num_episodes_per_update: 8
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.6203327753481411 --c_ee_to_obj=0.5428545404399348 --c_obj_to_target=0.628533647316458 --completion_reward=10.108890171956164 --model_lr=9.173714071647542e-05 --num_episodes_per_update=8
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 0.10281088165534502
+	c_ee_to_obj: 1.1943660792951825
+	c_obj_to_target: 1.780271670985376
+	completion_reward: 11.595561460741315
+	model_lr: 1.9153419069762905e-05
+	num_episodes_per_update: 4
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.10281088165534502 --c_ee_to_obj=1.1943660792951825 --c_obj_to_target=1.780271670985376 --completion_reward=11.595561460741315 --model_lr=1.9153419069762905e-05 --num_episodes_per_update=4
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 1.9900851448214496
+	c_ee_to_obj: 0.6374301727344129
+	c_obj_to_target: 0.10812894086333168
+	completion_reward: 10.567778296530214
+	model_lr: 0.00015908336290139166
+	num_episodes_per_update: 5
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.9900851448214496 --c_ee_to_obj=0.6374301727344129 --c_obj_to_target=0.10812894086333168 --completion_reward=10.567778296530214 --model_lr=0.00015908336290139166 --num_episodes_per_update=5
+2025-04-03 18:27:11 INFO Agent received command: run
+2025-04-03 18:27:11 INFO Agent starting run with config:
+	c_direction: 0.3166044336642255
+	c_ee_to_obj: 0.28278980574672974
+	c_obj_to_target: 0.19630671029203103
+	completion_reward: 9.932423762529826
+	model_lr: 7.570157544603002e-05
+	num_episodes_per_update: 8
+2025-04-03 18:27:11 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.3166044336642255 --c_ee_to_obj=0.28278980574672974 --c_obj_to_target=0.19630671029203103 --completion_reward=9.932423762529826 --model_lr=7.570157544603002e-05 --num_episodes_per_update=8
+2025-04-03 18:27:11 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:11 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:27:12 INFO Agent received command: run
+2025-04-03 18:27:12 INFO Agent starting run with config:
+	c_direction: 0.854006725144727
+	c_ee_to_obj: 0.03994888422259413
+	c_obj_to_target: 1.606416706743568
+	completion_reward: 7.515218019216636
+	model_lr: 1.110729044329713e-05
+	num_episodes_per_update: 10
+2025-04-03 18:27:12 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.854006725144727 --c_ee_to_obj=0.03994888422259413 --c_obj_to_target=1.606416706743568 --completion_reward=7.515218019216636 --model_lr=1.110729044329713e-05 --num_episodes_per_update=10
+2025-04-03 18:27:12 INFO Agent received command: run
+2025-04-03 18:27:12 INFO Agent starting run with config:
+	c_direction: 1.2126752936905478
+	c_ee_to_obj: 0.01727129856115206
+	c_obj_to_target: 0.47136073665594336
+	completion_reward: 18.035489684303617
+	model_lr: 7.950150403223775e-05
+	num_episodes_per_update: 4
+2025-04-03 18:27:12 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.2126752936905478 --c_ee_to_obj=0.01727129856115206 --c_obj_to_target=0.47136073665594336 --completion_reward=18.035489684303617 --model_lr=7.950150403223775e-05 --num_episodes_per_update=4
+2025-04-03 18:27:16 INFO Running runs: ['8o6sqo72']
+2025-04-03 18:27:16 INFO Cleaning up finished run: 8o6sqo72
+2025-04-03 18:27:16 INFO Running runs: ['nkbd8hh5']
+2025-04-03 18:27:16 INFO Cleaning up finished run: nkbd8hh5
+2025-04-03 18:27:16 INFO Running runs: ['1l6l2ahk']
+2025-04-03 18:27:16 INFO Cleaning up finished run: 1l6l2ahk
+2025-04-03 18:27:16 INFO Running runs: ['7jlbxjpf']
+2025-04-03 18:27:16 INFO Cleaning up finished run: 7jlbxjpf
+2025-04-03 18:27:16 INFO Running runs: ['bmj1wwcm']
+2025-04-03 18:27:16 INFO Cleaning up finished run: bmj1wwcm
+2025-04-03 18:27:16 INFO Running runs: ['5cy6mqq4']
+2025-04-03 18:27:16 INFO Cleaning up finished run: 5cy6mqq4
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 1.229972373371818
+	c_ee_to_obj: 1.3610869502212837
+	c_obj_to_target: 1.4614740798301131
+	completion_reward: 10.968445873488736
+	model_lr: 2.809603811141633e-05
+	num_episodes_per_update: 5
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.229972373371818 --c_ee_to_obj=1.3610869502212837 --c_obj_to_target=1.4614740798301131 --completion_reward=10.968445873488736 --model_lr=2.809603811141633e-05 --num_episodes_per_update=5
+2025-04-03 18:27:16 INFO Running runs: ['3acqsfea']
+2025-04-03 18:27:16 INFO Cleaning up finished run: 3acqsfea
+2025-04-03 18:27:16 INFO Running runs: ['1a5e5m2f']
+2025-04-03 18:27:16 INFO Cleaning up finished run: 1a5e5m2f
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 1.2179194136179528
+	c_ee_to_obj: 0.713448752351139
+	c_obj_to_target: 1.7030741837835637
+	completion_reward: 7.802163683771523
+	model_lr: 0.00016569515907179384
+	num_episodes_per_update: 4
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.2179194136179528 --c_ee_to_obj=0.713448752351139 --c_obj_to_target=1.7030741837835637 --completion_reward=7.802163683771523 --model_lr=0.00016569515907179384 --num_episodes_per_update=4
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 0.7358234703257316
+	c_ee_to_obj: 0.90155138828932
+	c_obj_to_target: 0.7471971737699725
+	completion_reward: 15.70221698941637
+	model_lr: 3.494934082168477e-05
+	num_episodes_per_update: 3
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7358234703257316 --c_ee_to_obj=0.90155138828932 --c_obj_to_target=0.7471971737699725 --completion_reward=15.70221698941637 --model_lr=3.494934082168477e-05 --num_episodes_per_update=3
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 0.6361414697764145
+	c_ee_to_obj: 1.363119807587066
+	c_obj_to_target: 1.2229466669226992
+	completion_reward: 9.66643250558016
+	model_lr: 0.0001766757202057232
+	num_episodes_per_update: 8
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.6361414697764145 --c_ee_to_obj=1.363119807587066 --c_obj_to_target=1.2229466669226992 --completion_reward=9.66643250558016 --model_lr=0.0001766757202057232 --num_episodes_per_update=8
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 1.51739023330443
+	c_ee_to_obj: 0.7843913590116622
+	c_obj_to_target: 1.0036041128414048
+	completion_reward: 14.42618655144656
+	model_lr: 0.00011390791197427034
+	num_episodes_per_update: 8
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.51739023330443 --c_ee_to_obj=0.7843913590116622 --c_obj_to_target=1.0036041128414048 --completion_reward=14.42618655144656 --model_lr=0.00011390791197427034 --num_episodes_per_update=8
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 1.7522321150825717
+	c_ee_to_obj: 1.5871198380756455
+	c_obj_to_target: 0.5612206269329632
+	completion_reward: 18.536821798153596
+	model_lr: 6.971789862562383e-05
+	num_episodes_per_update: 3
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.7522321150825717 --c_ee_to_obj=1.5871198380756455 --c_obj_to_target=0.5612206269329632 --completion_reward=18.536821798153596 --model_lr=6.971789862562383e-05 --num_episodes_per_update=3
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 0.07794693423034427
+	c_ee_to_obj: 1.7719147170885976
+	c_obj_to_target: 1.2410716281019214
+	completion_reward: 1.8267872497867188
+	model_lr: 0.0002968314753115836
+	num_episodes_per_update: 2
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.07794693423034427 --c_ee_to_obj=1.7719147170885976 --c_obj_to_target=1.2410716281019214 --completion_reward=1.8267872497867188 --model_lr=0.0002968314753115836 --num_episodes_per_update=2
+2025-04-03 18:27:16 INFO Agent received command: run
+2025-04-03 18:27:16 INFO Agent starting run with config:
+	c_direction: 0.8555321901708264
+	c_ee_to_obj: 1.7465690709784196
+	c_obj_to_target: 1.4168894971672452
+	completion_reward: 12.686126850608964
+	model_lr: 0.0001555676699937376
+	num_episodes_per_update: 6
+2025-04-03 18:27:16 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.8555321901708264 --c_ee_to_obj=1.7465690709784196 --c_obj_to_target=1.4168894971672452 --completion_reward=12.686126850608964 --model_lr=0.0001555676699937376 --num_episodes_per_update=6
+2025-04-03 18:27:17 INFO Running runs: ['podm8a52']
+2025-04-03 18:27:17 INFO Cleaning up finished run: podm8a52
+2025-04-03 18:27:17 INFO Running runs: ['8l8bmpos']
+2025-04-03 18:27:17 INFO Cleaning up finished run: 8l8bmpos
+2025-04-03 18:27:17 INFO Agent received command: run
+2025-04-03 18:27:17 INFO Agent starting run with config:
+	c_direction: 1.9791458990523645
+	c_ee_to_obj: 0.7784932307480918
+	c_obj_to_target: 1.4903946265261634
+	completion_reward: 17.284372310263038
+	model_lr: 0.00011555041593722946
+	num_episodes_per_update: 5
+2025-04-03 18:27:17 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.9791458990523645 --c_ee_to_obj=0.7784932307480918 --c_obj_to_target=1.4903946265261634 --completion_reward=17.284372310263038 --model_lr=0.00011555041593722946 --num_episodes_per_update=5
+2025-04-03 18:27:17 INFO Agent received command: run
+2025-04-03 18:27:17 INFO Agent starting run with config:
+	c_direction: 1.0434559560400665
+	c_ee_to_obj: 1.171932495271507
+	c_obj_to_target: 1.2500746621048249
+	completion_reward: 18.066907833356755
+	model_lr: 0.00045877142479103624
+	num_episodes_per_update: 10
+2025-04-03 18:27:17 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.0434559560400665 --c_ee_to_obj=1.171932495271507 --c_obj_to_target=1.2500746621048249 --completion_reward=18.066907833356755 --model_lr=0.00045877142479103624 --num_episodes_per_update=10
+2025-04-03 18:27:21 INFO Running runs: ['f2ecuqn2']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['9f59sd9n']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['m7bpxvvw']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['c5g4qlbx']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['r59kpr8a']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['n418x615']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['q0g15u8a']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:21 INFO Running runs: ['h5p69fuh']
+2025-04-03 18:27:21 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:21 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:22 INFO Running runs: ['y54qg5va']
+2025-04-03 18:27:22 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:22 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:22 INFO Running runs: ['zyat75ux']
+2025-04-03 18:27:22 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-04-03 18:27:22 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:45 INFO Agent received command: run
+2025-04-03 18:27:45 INFO Agent starting run with config:
+	c_direction: 1.991601953673132
+	c_ee_to_obj: 1.4199770113349706
+	c_obj_to_target: 0.6695017441220843
+	completion_reward: 16.054466447762962
+	model_lr: 0.0003362360105119917
+	num_episodes_per_update: 1
+2025-04-03 18:27:45 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.991601953673132 --c_ee_to_obj=1.4199770113349706 --c_obj_to_target=0.6695017441220843 --completion_reward=16.054466447762962 --model_lr=0.0003362360105119917 --num_episodes_per_update=1
+2025-04-03 18:27:45 INFO Agent received command: run
+2025-04-03 18:27:45 INFO Agent starting run with config:
+	c_direction: 1.833378713169792
+	c_ee_to_obj: 1.5668608272729696
+	c_obj_to_target: 0.47472134932884535
+	completion_reward: 9.3106713608477
+	model_lr: 8.183310253071288e-05
+	num_episodes_per_update: 8
+2025-04-03 18:27:45 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.833378713169792 --c_ee_to_obj=1.5668608272729696 --c_obj_to_target=0.47472134932884535 --completion_reward=9.3106713608477 --model_lr=8.183310253071288e-05 --num_episodes_per_update=8
+2025-04-03 18:27:45 INFO Agent received command: run
+2025-04-03 18:27:45 INFO Agent starting run with config:
+	c_direction: 0.8099843761752745
+	c_ee_to_obj: 1.704540573676442
+	c_obj_to_target: 1.6818456574322058
+	completion_reward: 19.58120104372686
+	model_lr: 2.4534146042958498e-05
+	num_episodes_per_update: 2
+2025-04-03 18:27:45 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.8099843761752745 --c_ee_to_obj=1.704540573676442 --c_obj_to_target=1.6818456574322058 --completion_reward=19.58120104372686 --model_lr=2.4534146042958498e-05 --num_episodes_per_update=2
+2025-04-03 18:27:45 INFO Agent received command: run
+2025-04-03 18:27:45 INFO Agent starting run with config:
+	c_direction: 0.2082050750055335
+	c_ee_to_obj: 0.15526976472800855
+	c_obj_to_target: 1.0798254998931545
+	completion_reward: 7.9856150405200355
+	model_lr: 8.426403799549117e-05
+	num_episodes_per_update: 1
+2025-04-03 18:27:45 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.2082050750055335 --c_ee_to_obj=0.15526976472800855 --c_obj_to_target=1.0798254998931545 --completion_reward=7.9856150405200355 --model_lr=8.426403799549117e-05 --num_episodes_per_update=1
+2025-04-03 18:27:45 INFO Running runs: []
+2025-04-03 18:27:46 INFO Agent received command: run
+2025-04-03 18:27:46 INFO Agent starting run with config:
+	c_direction: 1.3448331914470215
+	c_ee_to_obj: 0.25532641343343077
+	c_obj_to_target: 0.5743661378411691
+	completion_reward: 19.396349914812067
+	model_lr: 0.0005859309962702343
+	num_episodes_per_update: 4
+2025-04-03 18:27:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=1.3448331914470215 --c_ee_to_obj=0.25532641343343077 --c_obj_to_target=0.5743661378411691 --completion_reward=19.396349914812067 --model_lr=0.0005859309962702343 --num_episodes_per_update=4
+2025-04-03 18:27:46 INFO Agent received command: run
+2025-04-03 18:27:46 INFO Agent starting run with config:
+	c_direction: 0.14591901335676383
+	c_ee_to_obj: 0.10460544139201478
+	c_obj_to_target: 1.4674481735353444
+	completion_reward: 13.361220370847011
+	model_lr: 0.00040036282794824694
+	num_episodes_per_update: 6
+2025-04-03 18:27:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.14591901335676383 --c_ee_to_obj=0.10460544139201478 --c_obj_to_target=1.4674481735353444 --completion_reward=13.361220370847011 --model_lr=0.00040036282794824694 --num_episodes_per_update=6
+2025-04-03 18:27:46 INFO Agent received command: run
+2025-04-03 18:27:46 INFO Agent starting run with config:
+	c_direction: 0.7793623081882326
+	c_ee_to_obj: 0.5203369562119029
+	c_obj_to_target: 0.130417065278003
+	completion_reward: 16.851132872714118
+	model_lr: 0.0001259816504928756
+	num_episodes_per_update: 6
+2025-04-03 18:27:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.7793623081882326 --c_ee_to_obj=0.5203369562119029 --c_obj_to_target=0.130417065278003 --completion_reward=16.851132872714118 --model_lr=0.0001259816504928756 --num_episodes_per_update=6
+2025-04-03 18:27:46 INFO Agent received command: run
+2025-04-03 18:27:46 INFO Agent starting run with config:
+	c_direction: 0.1062286581686338
+	c_ee_to_obj: 1.1718146511601866
+	c_obj_to_target: 1.1520903696936626
+	completion_reward: 19.215323817805032
+	model_lr: 0.0006470973502488359
+	num_episodes_per_update: 1
+2025-04-03 18:27:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.1062286581686338 --c_ee_to_obj=1.1718146511601866 --c_obj_to_target=1.1520903696936626 --completion_reward=19.215323817805032 --model_lr=0.0006470973502488359 --num_episodes_per_update=1
+2025-04-03 18:27:46 INFO Agent received command: run
+2025-04-03 18:27:46 INFO Agent starting run with config:
+	c_direction: 0.36786129106738374
+	c_ee_to_obj: 0.980293754926728
+	c_obj_to_target: 1.1044591658632086
+	completion_reward: 9.931651593219366
+	model_lr: 9.52105632866344e-05
+	num_episodes_per_update: 4
+2025-04-03 18:27:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.36786129106738374 --c_ee_to_obj=0.980293754926728 --c_obj_to_target=1.1044591658632086 --completion_reward=9.931651593219366 --model_lr=9.52105632866344e-05 --num_episodes_per_update=4
+2025-04-03 18:27:46 INFO Agent received command: run
+2025-04-03 18:27:46 INFO Agent starting run with config:
+	c_direction: 0.2563148725718172
+	c_ee_to_obj: 0.566854944657547
+	c_obj_to_target: 1.638541105543872
+	completion_reward: 18.76463414229648
+	model_lr: 3.077666523788611e-05
+	num_episodes_per_update: 1
+2025-04-03 18:27:46 INFO About to run command: /usr/bin/env python homework3.py --c_direction=0.2563148725718172 --c_ee_to_obj=0.566854944657547 --c_obj_to_target=1.638541105543872 --completion_reward=18.76463414229648 --model_lr=3.077666523788611e-05 --num_episodes_per_update=1
+2025-04-03 18:27:50 INFO Running runs: ['usgzhai1']
+2025-04-03 18:27:50 INFO Running runs: ['us5ght9h']
+2025-04-03 18:27:50 INFO Running runs: ['zwulzpiv']
+2025-04-03 18:27:51 INFO Running runs: ['5f75t32r']
+2025-04-03 18:27:51 INFO Running runs: ['ws5xdctp']
+2025-04-03 18:27:51 INFO Running runs: ['hoi8tx1b']
+2025-04-03 18:27:51 INFO Running runs: ['7sf1mnpi']
+2025-04-03 18:27:51 INFO Running runs: ['u5fjo74f']
+2025-04-03 18:27:51 INFO Running runs: ['2o3bwnfv']
+2025-04-03 18:27:51 INFO Running runs: ['2swit0p7']
+2025-04-03 18:39:22 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:22 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.
+2025-04-03 18:39:23 INFO Closing mailbox, abandoning 0 handles.

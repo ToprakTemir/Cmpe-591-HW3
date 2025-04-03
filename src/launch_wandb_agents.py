@@ -1,20 +1,26 @@
-import subprocess
+import multiprocessing
 import os
+import wandb
 
 SWEEP_ID = "topraktemir_team/Cmpe-591-HW3-src/63eymr2h"
-NUM_AGENTS = 10
+NUM_AGENTS = 5
 
-processes = []
+def run_agent(i):
+    print(f"Launching agent {i}")
+    wandb.agent(SWEEP_ID)
+    print(f"agent {i} is finished")
 
-# Set environment variables for headless running
-os.environ["MUJOCO_GL"] = "egl"
-os.environ["PYOPENGL_PLATFORM"] = "egl"
+if __name__ == "__main__":
+    # Set environment variables globally for all child processes
+    os.environ["PYOPENGL_PLATFORM"] = "egl"
+    os.environ["MUJOCO_GL"] = "egl"
 
-for i in range(NUM_AGENTS):
-    print(f"launching agent {i}")
-    p = subprocess.Popen(["wandb", "agent", SWEEP_ID])
-    processes.append(p)
+    processes = []
 
-# Optional: wait for all to finish
-for p in processes:
-    p.wait()
+    for i in range(NUM_AGENTS):
+        p = multiprocessing.Process(target=run_agent, args=(i,))
+        p.start()
+        processes.append(p)
+
+    for p in processes:
+        p.join()

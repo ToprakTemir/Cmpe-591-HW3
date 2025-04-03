@@ -27,8 +27,23 @@ class VPG(nn.Module):
 
 
 
+class Q_Network(nn.Module):
+    def __init__(self, obs_dim=6, hl=[256, 256]) -> None:
+        super(Q_Network, self).__init__()
+        layers = []
+        layers.append(nn.Linear(obs_dim, hl[0]))
+        layers.append(nn.ReLU())
+        for i in range(1, len(hl)):
+            layers.append(nn.Linear(hl[i-1], hl[i]))
+            layers.append(nn.ReLU())
+        layers.append(nn.Linear[hl[-1], 1]) # 1 dimensional output - Q value prediction
+        self.model = nn.Sequential(*layers)
 
-class SAC(nn.Module):
-    def __init__(self, obs_dim=6, act_dim=2, hl=[256, 512, 256]) -> None:
-        raise NotImplementedError
-    
+    def forward(self, x):
+        assert isinstance(x, torch.Tensor)
+        if len(x.shape) == 1:
+            x = x.unsqueeze(0)
+        return self.model(x)
+
+
+

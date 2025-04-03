@@ -21,6 +21,8 @@ reward_list_path = get_latest_reward_list()
 
 if not reward_list_path:
     raise ValueError("reward list could not be found")
+else:
+    print(f"reward list path: {reward_list_path}")
 
 # Read the rewards from file: each line is expected to be a float value for each episode
 with open(reward_list_path, 'r') as file:
