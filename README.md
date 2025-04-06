@@ -8,6 +8,6 @@ There are 2 main functions named "reinforce_main" and "sac_main" in the homework
 
 ## REINFORCE reward plot:
 ![5000_ep_reinforce](https://github.com/user-attachments/assets/179c2b9e-bbed-4f1a-beb8-56cc2594156d)
-
+(notice the very slight increase in the very beginning of the graph. No such permanent performance increase happened again for the remainder of the training, but in the first 50-100 episodes the model became able to occasionally complete the task.)
 
 ## SAC reward plot:
