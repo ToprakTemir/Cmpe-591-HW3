@@ -28,21 +28,30 @@ class VPG(nn.Module):
 
 
 class Q_Network(nn.Module):
-    def __init__(self, obs_dim=6, hl=[256, 256]) -> None:
+    def __init__(self, obs_dim=6, action_dim=2, hl=[256, 256]) -> None:
         super(Q_Network, self).__init__()
         layers = []
-        layers.append(nn.Linear(obs_dim, hl[0]))
+
+        layers.append(nn.Linear(obs_dim + action_dim, hl[0]))
         layers.append(nn.ReLU())
+
         for i in range(1, len(hl)):
             layers.append(nn.Linear(hl[i-1], hl[i]))
             layers.append(nn.ReLU())
-        layers.append(nn.Linear[hl[-1], 1]) # 1 dimensional output - Q value prediction
+
+        layers.append(nn.Linear(hl[-1], 1)) # 1 dimensional output - Q value prediction
+
         self.model = nn.Sequential(*layers)
 
-    def forward(self, x):
+    def forward(self, state, action):
+        if len(state.shape) == 1:
+            state = state.unsqueeze(0)
+        if len(action.shape) == 1:
+            action = action.unsqueeze(0)
+
+        x = torch.cat((state, action), dim=1)  # Concatenate state and action along the feature dimension
         assert isinstance(x, torch.Tensor)
-        if len(x.shape) == 1:
-            x = x.unsqueeze(0)
+
         return self.model(x)
 
 

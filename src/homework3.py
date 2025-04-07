@@ -19,7 +19,7 @@ class Hw3Env(environment.BaseEnv):
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
         self._delta = 0.05
-        self._goal_thresh = 0.075  # easier goal detection
+        self._goal_thresh = 0.040  # easier goal detection
         self._max_timesteps = 300  # allow more steps
         self.c_ee_to_obj = 0.1
         self.c_obj_to_target = 0.2
@@ -182,8 +182,6 @@ def reinforce_main(
     # device = torch.device("cpu")
     agent = REINFORCE_Agent(model=VPG(), device=device, num_episodes_per_update=num_episodes_per_update, lr=model_lr)
 
-
-
     reward_save_dir = "./reinforce_rewards/"
     if not os.path.exists(reward_save_dir):
         os.makedirs(reward_save_dir)
@@ -197,7 +195,7 @@ def reinforce_main(
 
     episode_rewards_file = open(reward_save_path, "w")
 
-    num_episodes = 500
+    num_episodes = 5000
     episode_lengths = []
     for i in range(num_episodes):
         start_time = time.time()
@@ -242,15 +240,16 @@ def reinforce_main(
         print()
 
         avg_episode_length = np.mean(episode_lengths)
-        wandb.log({
-            "episode": i,
-            "cumulative_reward": cumulative_reward,
-            "avg_episode_length": avg_episode_length,
-        })
+
+        # wandb.log({
+        #     "episode": i,
+        #     "cumulative_reward": cumulative_reward,
+        #     "avg_episode_length": avg_episode_length,
+        # })
 
 
 def sweep_reinforce(config=None):
-    with wandb.init(config=config):
+    with wandb.init(project="cmpe591-hw3", entity="topraktemir", config=config): # WARNING: check if entity has to be team name
         config = wandb.config
 
         reinforce_main(
@@ -265,9 +264,9 @@ def sweep_reinforce(config=None):
         )
 
 
-def sac_main(some_hyperparameters=None, # IMPORTANT: don't forget to change
+def sac_main(agent_hyperparameters=None, # I haven't yet done comprehensive hyperparameter optimization for SAC
+        model_path=None,
         env_max_timesteps = 200,
-        model_lr = 1e-4,
         goal_tresh = 0.075,
         c_ee_to_obj = 0.1,
         c_obj_to_target = 0.2,
@@ -286,10 +285,10 @@ def sac_main(some_hyperparameters=None, # IMPORTANT: don't forget to change
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     # device = torch.device("cpu")
 
-    reward_save_dir = "./reinforce_rewards/"
+    reward_save_dir = "./sac_rewards/"
     if not os.path.exists(reward_save_dir):
         os.makedirs(reward_save_dir)
-    model_save_dir = "./reinforce_models/"
+    model_save_dir = "./sac_models/"
     if not os.path.exists(model_save_dir):
         os.makedirs(model_save_dir)
 
@@ -298,32 +297,15 @@ def sac_main(some_hyperparameters=None, # IMPORTANT: don't forget to change
     model_save_path = model_save_dir + "model_" + time_label
     best_model_save_path = model_save_dir + "best_model_" + time_label + ".npy"
 
-    num_episodes = 500
+    num_episodes = 1_000_000
     agent = SAC_agent(device=device)
+    agent.load_model(model_path)
     agent.train(env, num_episodes, reward_save_path, model_save_path, best_model_save_path)
-
-    for i in range(num_episodes):
-
-
-
-
-        agent.update_model()
-        agent.save_model(model_save_path)
-        print(f"model updated in {time.time() - data_collect_end_time} seconds", flush=True)
-        print()
-
-        avg_episode_length = np.mean(episode_lengths)
-        wandb.log({
-            "episode": i,
-            "cumulative_reward": cumulative_reward,
-            "avg_episode_length": avg_episode_length,
-        })
-
 
 
 if __name__ == "__main__":
 
-    default_config = {
+    reinforce_default_config = {
         "model_lr": 1e-4,  # default learning rate
         "c_ee_to_obj": 0.1,
         "c_obj_to_target": 0.2,
@@ -331,11 +313,43 @@ if __name__ == "__main__":
         "completion_reward": 10,
     }
 
-    # reinforce_main()
-    sweep_reinforce(default_config)
+    best_run = wandb.Api().run("topraktemir_team/Cmpe-591-HW3-src/runs/281k91mb")
+    config = best_run.config
 
+    print(f"best run config: {config}")
 
+    # best run config: {'model_lr': 1.8096711818664044e-05, 'c_direction': 0.3021260995439765, 'c_ee_to_obj': 0.27168714922932846, 'c_obj_to_target': 0.127750450144418, 'completion_reward': 4.547255827329526, 'num_episodes_per_update': 2}
+    # model_lr = 1.8096711818664044e-05
+    # c_direction = 0.3021260995439765
+    # c_ee_to_obj = 0.27168714922932846
+    # c_obj_to_target = 0.127750450144418
+    # completion_reward = 4.547255827329526
+    # num_episodes_per_update=2
 
-    # sac_main()
+    # model_lr = config["model_lr"]
+    c_direction = config["c_direction"]
+    c_ee_to_obj = config["c_ee_to_obj"]
+    c_obj_to_target = config["c_obj_to_target"]
+    completion_reward = config["completion_reward"]
+    # num_episodes_per_update = config["num_episodes_per_update"]
+
+    # reinforce_main(
+    #     num_episodes_per_update=num_episodes_per_update,
+    #     model_lr=model_lr,
+    #     c_ee_to_obj=c_ee_to_obj,
+    #     c_obj_to_target=c_obj_to_target,
+    #     c_direction=c_direction,
+    #     completion_reward=completion_reward
+    # )
+    # sweep_reinforce(reinforce_default_config)
+
+    model_path = "sac_models/model_20250406-081639"
+    sac_main(
+        model_path=model_path,
+        c_direction = c_direction,
+        c_ee_to_obj = c_ee_to_obj,
+        c_obj_to_target = c_obj_to_target,
+        completion_reward = completion_reward
+    )
 
 

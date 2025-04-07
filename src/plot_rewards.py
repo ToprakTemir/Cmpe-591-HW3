@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-rewards_dir_name = "reinforce_rewards"
-# rewards_dir_name = "sac_rewards"
+# rewards_dir_name = "reinforce_rewards"
+rewards_dir_name = "sac_rewards"
 
 def get_latest_reward_list():
     # Get the list of reward files in the directory
@@ -28,26 +28,30 @@ else:
 with open(reward_list_path, 'r') as file:
     rewards = [float(line.strip()) for line in file if line.strip()]
 
-# Function for moving average smoothing
-def moving_average(data, window_size=10):
+# Function for moving average smoothing that computes an average at every point using available data points
+def moving_average(data, window_size=100):
     if window_size < 1:
         return data
-    # Using 'valid' mode to avoid boundary effects
-    return np.convolve(data, np.ones(window_size)/window_size, mode='valid')
+    half_window = window_size // 2
+    averaged = []
+    for i in range(len(data)):
+        start = max(0, i - half_window)
+        end = min(len(data), i + half_window + 1)
+        window_data = data[start:end]
+        averaged.append(np.mean(window_data))
+    return np.array(averaged)
 
 # Set your desired smoothing window size (adjust as needed)
-window_size = 100
+window_size = 80
 smoothed_rewards = moving_average(rewards, window_size)
 
 # Create x values for episodes
 episodes = np.arange(1, len(rewards) + 1)
-# Adjust the x-axis for the smoothed rewards (which has fewer points due to convolution 'valid' mode)
-smoothed_episodes = np.arange(window_size, len(rewards) + 1)
 
 # Plot the raw and smoothed rewards
 plt.figure(figsize=(12, 6))
 plt.plot(episodes, rewards, label='Raw Reward', alpha=0.5)
-plt.plot(smoothed_episodes, smoothed_rewards, label='Smoothed Reward', linewidth=2)
+plt.plot(episodes, smoothed_rewards, label='Smoothed Reward', linewidth=2)
 plt.xlabel('Episode')
 plt.ylabel('Reward')
 plt.title('Episode Reward Graph')
