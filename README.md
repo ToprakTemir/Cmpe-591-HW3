@@ -1,13 +1,29 @@
 # Cmpe-591-HW3
 
 ## How to run:
-There are 2 main functions named "reinforce_main" and "sac_main" in the homework3.py file. Both functions train their respective models, and log their training loss and reward information both to the terminal and to the rewards directory in doing so. The set of environment hyperparameters I used for the environment:
-- c_direction:
-- ...
+There are 2 main functions named "reinforce_main" and "sac_main" in the homework3.py file.  
+Both main functions initialize the corresponding agent and train their respective models. The necessary logging is done during training.  
 
 
-## REINFORCE reward plot:
+##Reward plots:
+The set of reward hyperparameters I used for the environment:
+- c_direction = 0.3021260995439765
+- c_ee_to_obj = 0.27168714922932846
+- c_obj_to_target = 0.127750450144418
+- completion_reward = 4.547255827329526
+
+### REINFORCE reward plot:
 ![5000_ep_reinforce](https://github.com/user-attachments/assets/179c2b9e-bbed-4f1a-beb8-56cc2594156d)
-(notice the very slight increase in the very beginning of the graph. No such permanent performance increase happened again for the remainder of the training, but in the first 50-100 episodes the model became able to occasionally complete the task.)
 
-## SAC reward plot:
+### SAC reward plot:
+![sac_plot](https://github.com/user-attachments/assets/0b74da08-968e-4e62-8eb1-649287bb5844)
+
+
+## File and logs for the previous version of the project
+The old version of the homework3 is implemented in the old_homework3 file, with collector, agent and main classes all in the same file.  
+The old version is implementing a PPO for the same environment, over our current _homework3.py.
+
+### reward plot:
+The reward is 1/ee_to_obj + 1/obj_to_target  
+
+![latest_plot](https://github.com/user-attachments/assets/24f669e7-68db-4a38-b202-e5ee2b1ecc74)
