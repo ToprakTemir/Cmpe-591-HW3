@@ -16,7 +16,8 @@ The set of reward hyperparameters I used for the environment:
 ![5000_ep_reinforce](https://github.com/user-attachments/assets/179c2b9e-bbed-4f1a-beb8-56cc2594156d)
 
 ### SAC reward plot:
-![sac_plot](https://github.com/user-attachments/assets/0b74da08-968e-4e62-8eb1-649287bb5844)
+![sac_rewards](https://github.com/user-attachments/assets/ae2c0973-6faa-44dd-bb16-078bffccaf4c)
+
 
 
 ## File and logs for the previous version of the project
