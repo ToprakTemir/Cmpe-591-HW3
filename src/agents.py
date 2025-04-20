@@ -21,6 +21,9 @@ class REINFORCE_Agent():
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
 
         self.episodes_per_update = num_episodes_per_update
+        # self.reward_history = deque(maxlen=100)
+        self.b_alpha = 0.1
+        self.baseline = 0.0
 
         # self.episode_keys = ["state", "action", "reward", "next_state", "done", "log_prob"]
         self.episode_keys = ["total_log_prob", "cumulative_reward", "steps_per_episode"]
@@ -58,11 +61,18 @@ class REINFORCE_Agent():
             rewards_sum = episode["cumulative_reward"]
             steps_per_episode = episode["steps_per_episode"]
 
+            # exponentially moving average of the rewards
+            self.baseline = rewards_sum * self.b_alpha + self.baseline * (1 - self.b_alpha)
+
+            rewards_sum = rewards_sum - self.baseline
+            print(f"rewards_sum: {rewards_sum}, baseline: {self.baseline}")
+
             loss = - log_prob_sum * rewards_sum
             loss /= steps_per_episode
             total_loss += loss.mean()
 
         total_loss /= self.episodes_per_update
+
 
         total_loss = total_loss.mean()
         print(f"total loss: {total_loss}")
@@ -209,6 +219,7 @@ class SAC_agent():
         # and updating the Q functions to fit the value function
         with torch.no_grad():
             next_policy_actions, next_policy_log_probs = self.predict(next_states)
+            next_policy_log_probs = next_policy_log_probs.sum(dim=-1, keepdim=True)
         q1_next = self.target_q1(next_states, next_policy_actions)
         q2_next = self.target_q2(next_states, next_policy_actions)
         q_next = torch.min(q1_next, q2_next)

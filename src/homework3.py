@@ -167,7 +167,7 @@ def reinforce_main(
         c_ee_to_obj = 0.1,
         c_obj_to_target = 0.2,
         c_direction = 0.5,
-        completion_reward = 10,
+        completion_reward = 10.0,
 ):
 
     env = Hw3Env(render_mode="offscreen")
@@ -193,9 +193,13 @@ def reinforce_main(
     reward_save_path = reward_save_dir + "rewards_" + time_label + ".npy"
     model_save_path = model_save_dir + "model_" + time_label
 
-    episode_rewards_file = open(reward_save_path, "w")
+    # IMPORTANT: TO CONTINUE WHERE IT LEFT OFF
+    agent.load_model("/Users/toprak/cmpe591.github.io/src/new_hw3/src/reinforce_models/model_20250417-234458")
+    reward_save_path = "/Users/toprak/cmpe591.github.io/src/new_hw3/src/reinforce_rewards/rewards_20250417-234458.npy"
 
-    num_episodes = 5000
+    episode_rewards_file = open(reward_save_path, "a")
+
+    num_episodes = 10_000
     episode_lengths = []
     for i in range(num_episodes):
         start_time = time.time()
@@ -271,7 +275,7 @@ def sac_main(agent_hyperparameters=None, # I haven't yet done comprehensive hype
         c_ee_to_obj = 0.1,
         c_obj_to_target = 0.2,
         c_direction = 0.5,
-        completion_reward = 10,
+        completion_reward = 10.0,
 ):
 
     env = Hw3Env(render_mode="offscreen")
@@ -313,43 +317,43 @@ if __name__ == "__main__":
         "completion_reward": 10,
     }
 
-    best_run = wandb.Api().run("topraktemir_team/Cmpe-591-HW3-src/runs/281k91mb")
-    config = best_run.config
+    # best_run = wandb.Api().run("topraktemir_team/Cmpe-591-HW3-src/runs/281k91mb")
+    # config = best_run.config
 
-    print(f"best run config: {config}")
+    # print(f"best run config: {config}")
 
     # best run config: {'model_lr': 1.8096711818664044e-05, 'c_direction': 0.3021260995439765, 'c_ee_to_obj': 0.27168714922932846, 'c_obj_to_target': 0.127750450144418, 'completion_reward': 4.547255827329526, 'num_episodes_per_update': 2}
-    # model_lr = 1.8096711818664044e-05
-    # c_direction = 0.3021260995439765
-    # c_ee_to_obj = 0.27168714922932846
-    # c_obj_to_target = 0.127750450144418
-    # completion_reward = 4.547255827329526
-    # num_episodes_per_update=2
+    model_lr = 1.8096711818664044e-05
+    c_direction = 0.3021260995439765
+    c_ee_to_obj = 0.27168714922932846
+    c_obj_to_target = 0.127750450144418
+    completion_reward = 4.547255827329526
+    num_episodes_per_update=2
 
     # model_lr = config["model_lr"]
-    c_direction = config["c_direction"]
-    c_ee_to_obj = config["c_ee_to_obj"]
-    c_obj_to_target = config["c_obj_to_target"]
-    completion_reward = config["completion_reward"]
+    # c_direction = config["c_direction"]
+    # c_ee_to_obj = config["c_ee_to_obj"]
+    # c_obj_to_target = config["c_obj_to_target"]
+    # completion_reward = config["completion_reward"]
     # num_episodes_per_update = config["num_episodes_per_update"]
 
-    # reinforce_main(
-    #     num_episodes_per_update=num_episodes_per_update,
-    #     model_lr=model_lr,
-    #     c_ee_to_obj=c_ee_to_obj,
-    #     c_obj_to_target=c_obj_to_target,
-    #     c_direction=c_direction,
-    #     completion_reward=completion_reward
-    # )
+    reinforce_main(
+        num_episodes_per_update=num_episodes_per_update,
+        model_lr=model_lr,
+        c_ee_to_obj=c_ee_to_obj,
+        c_obj_to_target=c_obj_to_target,
+        c_direction=c_direction,
+        completion_reward=completion_reward
+    )
     # sweep_reinforce(reinforce_default_config)
 
-    model_path = "sac_models/model_20250406-081639"
-    sac_main(
-        model_path=model_path,
-        c_direction = c_direction,
-        c_ee_to_obj = c_ee_to_obj,
-        c_obj_to_target = c_obj_to_target,
-        completion_reward = completion_reward
-    )
+    # model_path = "sac_models/model_20250406-081639"
+    # sac_main(
+    #     model_path=model_path,
+    #     c_direction = c_direction,
+    #     c_ee_to_obj = c_ee_to_obj,
+    #     c_obj_to_target = c_obj_to_target,
+    #     completion_reward = completion_reward
+    # )
 
 
