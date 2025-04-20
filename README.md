@@ -6,7 +6,9 @@ Both main functions initialize the corresponding agent and train their respectiv
 
 
 ##Reward plots:
-The set of reward hyperparameters I used for the environment:
+The set of environment hyperparameters I used for the environment:
+- _goal_tresh = 0.040
+- _max_timesteps = 200
 - c_direction = 0.3021260995439765
 - c_ee_to_obj = 0.27168714922932846
 - c_obj_to_target = 0.127750450144418
