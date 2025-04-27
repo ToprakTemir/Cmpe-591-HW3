@@ -137,14 +137,14 @@ class SAC_agent():
                  action_dim = 2,
                  memory_capacity = 10**5,
                  num_steps_per_iteration = 1,
-                 num_updates_per_iteration = 1,
+                 num_updates_per_iteration = 5,
                  gamma = 0.99,
                  batch_size = 128,
                  polyak_tau = 0.005,
-                 initial_entropy_temp = 0.2,
-                 policy_lr = 1e-4,
-                 q_lr = 1e-4,
-                 entropy_lr = 5e-5,
+                 initial_entropy_temp = 0.1,
+                 policy_lr = 3e-5,
+                 q_lr = 3e-5,
+                 entropy_lr = 3e-4,
                  target_entropy_scale = 1
                  ):
         self.device = device
@@ -159,7 +159,12 @@ class SAC_agent():
         self.target_q2 = self.target_q2.requires_grad_(False)
         self.target_q1.load_state_dict(self.q1.state_dict())
         self.target_q2.load_state_dict(self.q2.state_dict())
-        self.log_entropy_temp = torch.tensor(initial_entropy_temp, requires_grad=True).to(device)
+        self.dynamic_entropy_temp = True
+
+        if self.dynamic_entropy_temp:
+            self.log_alpha = torch.tensor(np.log(initial_entropy_temp), requires_grad=True).to(device)
+        else:
+            self.log_alpha = torch.tensor(np.log(initial_entropy_temp), requires_grad=False).to(device)
 
         # optimizers
         self.policy_lr = policy_lr
@@ -167,7 +172,8 @@ class SAC_agent():
         self.entropy_lr = entropy_lr
         self.policy_optimizer = torch.optim.Adam(self.policy.parameters(), lr=self.policy_lr)
         self.q_optimizer = torch.optim.Adam(list(self.q1.parameters()) + list(self.q2.parameters()), lr=self.q_lr)
-        self.entropy_optimizer = torch.optim.Adam([self.log_entropy_temp], lr=self.entropy_lr)
+        if self.dynamic_entropy_temp:
+            self.entropy_optimizer = torch.optim.Adam([self.log_alpha], lr=self.entropy_lr)
 
         # other hyperparameters
         self.num_steps_per_iteration = num_steps_per_iteration
@@ -181,14 +187,21 @@ class SAC_agent():
 
     def predict(self, state):
         mean, std = self.policy(state)
+        dist = torch.distributions.Normal(mean, std)
 
-        # reparametrization trick: sample noise, make action differentiable (since it is not "sampled" anymore)
-        epsilon = torch.randn_like(mean)
-        action = mean + epsilon * std
+        a = dist.rsample()  # same as mean + eps*std, but gradients handled
+        squashed = torch.tanh(a)
+        action = squashed * 2
 
-        action_dist = torch.distributions.Normal(mean, std)
-        action_log_prob = action_dist.log_prob(action)
-        return action, action_log_prob
+        logp_a = dist.log_prob(a)  # shape [batch, action_dim]
+
+        # apply the change-of-variables correction:  log(1 - tanh(a)^2) = log(1 - squashed^2)
+        jacobian = torch.log(1 - squashed.pow(2) + 1e-6)  # shape [batch, action_dim]
+
+        # sum over dims
+        logp = (logp_a - jacobian).sum(dim=-1, keepdim=True)  # shape [batch, 1]
+
+        return action, logp
 
     def save_model(self, path):
         torch.save({
@@ -197,7 +210,7 @@ class SAC_agent():
             'q2_state_dict': self.q2.state_dict(),
             'target_q1_state_dict': self.target_q1.state_dict(),
             'target_q2_state_dict': self.target_q2.state_dict(),
-            'entropy_temp': self.log_entropy_temp,
+            'entropy_temp': self.log_alpha,
         }, path)
 
     def load_model(self, path):
@@ -207,7 +220,7 @@ class SAC_agent():
         self.q2.load_state_dict(checkpoint['q2_state_dict'])
         self.target_q1.load_state_dict(checkpoint['target_q1_state_dict'])
         self.target_q2.load_state_dict(checkpoint['target_q2_state_dict'])
-        self.log_entropy_temp = checkpoint['entropy_temp']
+        self.log_alpha = checkpoint['entropy_temp']
 
 
     def update(self):
@@ -226,7 +239,7 @@ class SAC_agent():
         q2_next = self.target_q2(next_states, next_policy_actions)
         q_next = torch.min(q1_next, q2_next)
 
-        entropy_penalty = self.log_entropy_temp.exp() * next_policy_log_probs
+        entropy_penalty = self.log_alpha.exp().detach() * next_policy_log_probs
         value_of_next_state = q_next - entropy_penalty
         q_targets = rewards + self.gamma * value_of_next_state * (1 - dones)
 
@@ -245,20 +258,20 @@ class SAC_agent():
         q1_pi = self.q1(states, policy_actions)
         q2_pi = self.q2(states, policy_actions)
         q_pi = torch.min(q1_pi, q2_pi)
-        policy_loss = (self.log_entropy_temp.exp() * policy_log_probs - q_pi).mean()
+        policy_loss = (self.log_alpha.exp().detach() * policy_log_probs - q_pi).mean()
         self.policy_optimizer.zero_grad()
         policy_loss.backward() # retain graph to not lose the gradients of policy_log_probs
         self.policy_optimizer.step()
 
         # updating entropy temperature
-        policy_actions, policy_log_probs = self.predict(states)
-        policy_entropy = policy_log_probs.sum(dim=-1, keepdim=True)
-        entropy_loss = - self.log_entropy_temp.exp() * (policy_entropy.mean().detach() + self.target_entropy)
-        self.entropy_optimizer.zero_grad()
-        entropy_loss.backward()
-        self.entropy_optimizer.step()
-
-        # print(f"entropy_temp: {self.log_entropy_temp.exp().item()}, policy_entropy: {policy_entropy.mean().item()}, ")
+        if self.dynamic_entropy_temp:
+            policy_actions, policy_log_probs = self.predict(states)
+            policy_entropy = -policy_log_probs.sum(dim=-1, keepdim=True)
+            entropy_loss = self.log_alpha * (policy_entropy.mean().detach() - self.target_entropy)
+            self.entropy_optimizer.zero_grad()
+            entropy_loss.backward()
+            self.entropy_optimizer.step()
+            self.log_alpha.data.clamp_(min=-20, max=2)
 
         # updating target Q networks (via polyak averaging)
         for q, target_q in [(self.q1, self.target_q1), (self.q2, self.target_q2)]:
