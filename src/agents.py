@@ -150,14 +150,16 @@ class SAC_agent():
         self.device = device
 
         # networks to be learned
-        self.policy = VPG(obs_dim).to(device)
+        self.policy = VPG(obs_dim, action_dim).to(device)
         self.q1 = Q_Network(obs_dim, action_dim).to(device)
         self.q2 = Q_Network(obs_dim, action_dim).to(device)
         self.target_q1 = Q_Network(obs_dim, action_dim).to(device)
-        self.target_q1.load_state_dict(self.q1.state_dict())
         self.target_q2 = Q_Network(obs_dim, action_dim).to(device)
+        self.target_q1 = self.target_q1.requires_grad_(False)
+        self.target_q2 = self.target_q2.requires_grad_(False)
+        self.target_q1.load_state_dict(self.q1.state_dict())
         self.target_q2.load_state_dict(self.q2.state_dict())
-        self.entropy_temp = torch.tensor(initial_entropy_temp, requires_grad=True).to(device)
+        self.log_entropy_temp = torch.tensor(initial_entropy_temp, requires_grad=True).to(device)
 
         # optimizers
         self.policy_lr = policy_lr
@@ -165,7 +167,7 @@ class SAC_agent():
         self.entropy_lr = entropy_lr
         self.policy_optimizer = torch.optim.Adam(self.policy.parameters(), lr=self.policy_lr)
         self.q_optimizer = torch.optim.Adam(list(self.q1.parameters()) + list(self.q2.parameters()), lr=self.q_lr)
-        self.entropy_optimizer = torch.optim.Adam([self.entropy_temp], lr=self.entropy_lr)
+        self.entropy_optimizer = torch.optim.Adam([self.log_entropy_temp], lr=self.entropy_lr)
 
         # other hyperparameters
         self.num_steps_per_iteration = num_steps_per_iteration
@@ -173,7 +175,6 @@ class SAC_agent():
         self.gamma = gamma
         self.batch_size = batch_size
         self.polyak_tau = polyak_tau
-        self.initial_entropy_temp = initial_entropy_temp
         self.target_entropy = - action_dim * target_entropy_scale
 
         self.memory_buffer = Memory(memory_capacity, obs_dim, action_dim)
@@ -196,7 +197,7 @@ class SAC_agent():
             'q2_state_dict': self.q2.state_dict(),
             'target_q1_state_dict': self.target_q1.state_dict(),
             'target_q2_state_dict': self.target_q2.state_dict(),
-            'entropy_temp': self.entropy_temp,
+            'entropy_temp': self.log_entropy_temp,
         }, path)
 
     def load_model(self, path):
@@ -206,7 +207,8 @@ class SAC_agent():
         self.q2.load_state_dict(checkpoint['q2_state_dict'])
         self.target_q1.load_state_dict(checkpoint['target_q1_state_dict'])
         self.target_q2.load_state_dict(checkpoint['target_q2_state_dict'])
-        self.entropy_temp = checkpoint['entropy_temp']
+        self.log_entropy_temp = checkpoint['entropy_temp']
+
 
     def update(self):
         mse = torch.nn.MSELoss()
@@ -224,7 +226,7 @@ class SAC_agent():
         q2_next = self.target_q2(next_states, next_policy_actions)
         q_next = torch.min(q1_next, q2_next)
 
-        entropy_penalty = self.entropy_temp * next_policy_log_probs
+        entropy_penalty = self.log_entropy_temp.exp() * next_policy_log_probs
         value_of_next_state = q_next - entropy_penalty
         q_targets = rewards + self.gamma * value_of_next_state * (1 - dones)
 
@@ -236,24 +238,27 @@ class SAC_agent():
         q_loss.backward()
         self.q_optimizer.step()
 
-        # updating policy with new Q functions
+        # updating policy with Q functions
         # the policy is fitted so that P(a ~ π(a|s)) ~ exp(1/entropy * Q(s, a)) i.e. entropy * log(π) = Q
         policy_actions, policy_log_probs = self.predict(states)
 
         q1_pi = self.q1(states, policy_actions)
         q2_pi = self.q2(states, policy_actions)
         q_pi = torch.min(q1_pi, q2_pi)
-        policy_loss = (self.entropy_temp * policy_log_probs - q_pi).mean()
+        policy_loss = (self.log_entropy_temp.exp() * policy_log_probs - q_pi).mean()
         self.policy_optimizer.zero_grad()
         policy_loss.backward() # retain graph to not lose the gradients of policy_log_probs
         self.policy_optimizer.step()
 
         # updating entropy temperature
         policy_actions, policy_log_probs = self.predict(states)
-        entropy_loss = - self.entropy_temp * (policy_log_probs + self.target_entropy).mean()
+        policy_entropy = policy_log_probs.sum(dim=-1, keepdim=True)
+        entropy_loss = - self.log_entropy_temp.exp() * (policy_entropy.mean().detach() + self.target_entropy)
         self.entropy_optimizer.zero_grad()
         entropy_loss.backward()
         self.entropy_optimizer.step()
+
+        # print(f"entropy_temp: {self.log_entropy_temp.exp().item()}, policy_entropy: {policy_entropy.mean().item()}, ")
 
         # updating target Q networks (via polyak averaging)
         for q, target_q in [(self.q1, self.target_q1), (self.q2, self.target_q2)]:
@@ -262,7 +267,7 @@ class SAC_agent():
 
 
     def train(self, env, total_updates, reward_log_path, model_save_path, best_model_save_path):
-        env.reset()
+        state, _ = env.reset()
         env_done = False
         reward_this_episode = 0.0
 
@@ -277,7 +282,7 @@ class SAC_agent():
             start_time = time.time()
             for _ in range(self.num_steps_per_iteration):
                 if env_done:
-                    env.reset()
+                    state, _ = env.reset()
                     print(
                         f"Episode {i} collected in {time.time() - latest_episode_end_time} seconds, reward={reward_this_episode}",
                         flush=True)
@@ -290,13 +295,14 @@ class SAC_agent():
                         print(f"Best model saved with reward {highest_reward}", flush=True)
                     reward_this_episode = 0.0
 
-                state = env.high_level_state()
                 action, _ = self.predict(torch.tensor(state, dtype=torch.float32).to(self.device))
-                next_state, reward, is_terminal, is_truncated = env.step(action.detach())
+                action = action.squeeze()
+                next_state, reward, is_terminal, is_truncated, info = env.step(action.detach())
                 reward_this_episode += reward
                 latest_10_rewards.append(reward_this_episode)
                 env_done = is_terminal or is_truncated
                 self.memory_buffer.add(state, action.detach(), reward, next_state, env_done)
+                state = next_state
 
             # model updating
             for _ in range(self.num_updates_per_iteration):

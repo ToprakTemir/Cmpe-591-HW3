@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 import time
+import gymnasium as gym
 
 import torch
 import torchvision.transforms as transforms
@@ -9,7 +10,6 @@ import numpy as np
 import environment
 from agents import REINFORCE_Agent
 from agents import SAC_agent
-
 from model import VPG
 from model import Q_Network
 
@@ -268,26 +268,27 @@ def sweep_reinforce(config=None):
         )
 
 
-def sac_main(agent_hyperparameters=None, # I haven't yet done comprehensive hyperparameter optimization for SAC
-        model_path=None,
-        env_max_timesteps = 200,
-        goal_tresh = 0.075,
-        c_ee_to_obj = 0.1,
-        c_obj_to_target = 0.2,
-        c_direction = 0.5,
-        completion_reward = 10.0,
-):
+def sac_main(agent_hyperparameters=None,  # I haven't yet done comprehensive hyperparameter optimization for SAC
+             model_load_path=None,
+             env_max_timesteps = 200,
+             goal_tresh = 0.075,
+             c_ee_to_obj = 0.1,
+             c_obj_to_target = 0.2,
+             c_direction = 0.5,
+             completion_reward = 10.0,
+             ):
 
-    env = Hw3Env(render_mode="offscreen")
-    env._max_timesteps = env_max_timesteps
-    env._goal_thresh = goal_tresh
-    env.c_ee_to_obj = c_ee_to_obj
-    env.c_obj_to_target = c_obj_to_target
-    env.c_direction = c_direction
-    env.completion_reward = completion_reward
+    # env = Hw3Env(render_mode="offscreen")
+    # env._max_timesteps = env_max_timesteps
+    # env._goal_thresh = goal_tresh
+    # env.c_ee_to_obj = c_ee_to_obj
+    # env.c_obj_to_target = c_obj_to_target
+    # env.c_direction = c_direction
+    # env.completion_reward = completion_reward
+
+    env = gym.make("Pusher-v5")
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    # device = torch.device("cpu")
 
     reward_save_dir = "./sac_rewards/"
     if not os.path.exists(reward_save_dir):
@@ -302,8 +303,11 @@ def sac_main(agent_hyperparameters=None, # I haven't yet done comprehensive hype
     best_model_save_path = model_save_dir + "best_model_" + time_label + ".npy"
 
     num_episodes = 1_000_000
-    agent = SAC_agent(device=device)
-    agent.load_model(model_path)
+    agent = SAC_agent(device=device, obs_dim=env.observation_space.shape[0], action_dim=env.action_space.shape[0])
+    if model_load_path is not None:
+        agent.load_model(model_load_path)
+
+
     agent.train(env, num_episodes, reward_save_path, model_save_path, best_model_save_path)
 
 
@@ -337,23 +341,24 @@ if __name__ == "__main__":
     # completion_reward = config["completion_reward"]
     # num_episodes_per_update = config["num_episodes_per_update"]
 
-    reinforce_main(
-        num_episodes_per_update=num_episodes_per_update,
-        model_lr=model_lr,
-        c_ee_to_obj=c_ee_to_obj,
-        c_obj_to_target=c_obj_to_target,
-        c_direction=c_direction,
-        completion_reward=completion_reward
-    )
+    # reinforce_main(
+    #     num_episodes_per_update=num_episodes_per_update,
+    #     model_lr=model_lr,
+    #     c_ee_to_obj=c_ee_to_obj,
+    #     c_obj_to_target=c_obj_to_target,
+    #     c_direction=c_direction,
+    #     completion_reward=completion_reward
+    # )
     # sweep_reinforce(reinforce_default_config)
 
     # model_path = "sac_models/model_20250406-081639"
-    # sac_main(
-    #     model_path=model_path,
-    #     c_direction = c_direction,
-    #     c_ee_to_obj = c_ee_to_obj,
-    #     c_obj_to_target = c_obj_to_target,
-    #     completion_reward = completion_reward
-    # )
+    model_path = None
+    sac_main(
+        model_load_path=model_path,
+        c_direction = c_direction,
+        c_ee_to_obj = c_ee_to_obj,
+        c_obj_to_target = c_obj_to_target,
+        completion_reward = completion_reward
+    )
 
 

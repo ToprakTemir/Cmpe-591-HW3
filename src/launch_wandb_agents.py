@@ -3,7 +3,7 @@ import os
 import wandb
 
 SWEEP_ID = "topraktemir_team/Cmpe-591-HW3-src/63eymr2h"
-NUM_AGENTS = 5
+NUM_AGENTS = 10
 
 def run_agent(i):
     print(f"Launching agent {i}")
@@ -12,8 +12,8 @@ def run_agent(i):
 
 if __name__ == "__main__":
     # Set environment variables globally for all child processes
-    os.environ["PYOPENGL_PLATFORM"] = "egl"
-    os.environ["MUJOCO_GL"] = "egl"
+    # os.environ["PYOPENGL_PLATFORM"] = "egl"
+    # os.environ["MUJOCO_GL"] = "egl"
 
     processes = []
 

@@ -43,7 +43,7 @@ if __name__ == "__main__":
         rewards = [float(line.strip()) for line in file if line.strip()]
 
     # Set your desired smoothing window size (adjust as needed)
-    window_size = 500
+    window_size = 100
     smoothed_rewards = moving_average(rewards, window_size)
 
     # Create x values for episodes
@@ -53,6 +53,10 @@ if __name__ == "__main__":
     plt.figure(figsize=(12, 6))
     plt.plot(episodes, rewards, label='Raw Reward', alpha=0.5)
     plt.plot(episodes, smoothed_rewards, label='Smoothed Reward', linewidth=2)
+
+    # set the limits of y to not be too high
+    plt.ylim(-1000, 0)
+
     plt.xlabel('Episode')
     plt.ylabel('Reward')
     plt.title('Episode Reward Graph')
