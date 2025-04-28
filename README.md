@@ -20,15 +20,3 @@ The set of environment hyperparameters I used for the environment:
 
 ### SAC reward plot:
 ![myplot](https://github.com/user-attachments/assets/08a8b84f-78cf-413a-b630-a1811f75ab39)
-
-
-
-
-## File and logs for the previous version of the project
-The old version of the homework3 is implemented in the old_homework3 file, with collector, agent and main classes all in the same file.  
-The old version is implementing a PPO for the same environment, over our current _homework3.py.
-
-### reward plot:
-The reward is 1/ee_to_obj + 1/obj_to_target for 100 steps 
-
-![latest_plot](https://github.com/user-attachments/assets/24f669e7-68db-4a38-b202-e5ee2b1ecc74)
