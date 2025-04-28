@@ -19,7 +19,7 @@ The set of environment hyperparameters I used for the environment:
 
 
 ### SAC reward plot:
-![sac_rewards](https://github.com/user-attachments/assets/2756b869-bd82-4350-aa0c-570a5463998c)
+![myplot](https://github.com/user-attachments/assets/08a8b84f-78cf-413a-b630-a1811f75ab39)
 
 
 
