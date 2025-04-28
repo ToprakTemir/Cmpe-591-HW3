@@ -6,7 +6,10 @@ Both main functions initialize the corresponding agent and train their respectiv
 
 
 ##Reward plots:
-The set of environment hyperparameters I used for the environment:
+
+### REINFORCE reward plot:
+
+The set of environment hyperparameters I used for the REINFORCE environment:
 - _goal_tresh = 0.040
 - _max_timesteps = 200
 - c_direction = 0.3021260995439765
@@ -14,9 +17,9 @@ The set of environment hyperparameters I used for the environment:
 - c_obj_to_target = 0.127750450144418
 - completion_reward = 4.547255827329526
 
-### REINFORCE reward plot:
 ![reinforce_rewards](https://github.com/user-attachments/assets/e11e4852-6355-40e3-8a55-90707d798b19)
 
-
 ### SAC reward plot:
+
+The SAC environment is the default Pusher-v5 environment of gymnasium
 ![myplot](https://github.com/user-attachments/assets/08a8b84f-78cf-413a-b630-a1811f75ab39)
